@@ -138,7 +138,7 @@ const Facilities = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="title-area portfolio-area-content-text-extra-style text-center">
-                            <p className="sec-text">Task-in Services has own training center with Loyd Register certificate as academy to train his own Service Engineers (Task-In - LR ISO23678 Certificate). This provides ship management with full confidence that a single company supports all makers and covers all types of their equipment.</p>
+                            <p className="sec-text">Task-in Services has own training center with Loyd Register certificate as academy to train his own Service Engineers. (Task-In - LR ISO23678 Certificate). This provides ship management with full confidence that a single company supports all makers and covers all types of their equipment.</p>
                         </div>
                         <section className="blog-area space-extra-bottom">
                             <div className="container">

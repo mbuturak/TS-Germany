@@ -58,7 +58,6 @@ export default function HomePage() {
       <HeaderFour />
       <VideoHero />
       <About />
-      <Locations />
       <Contact />
       <FooterThree />
       <Scroll />

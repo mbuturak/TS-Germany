@@ -211,7 +211,6 @@ export default function ServicesPage() {
                     e.currentTarget.style.marginTop = "0";
                 }}
             >
-                <i className="ri-arrow-right-s-line" style={{ fontSize: "20px", fontWeight: "bold" }}></i>
             </button>
         );
     }
@@ -264,7 +263,6 @@ export default function ServicesPage() {
                     e.currentTarget.style.marginTop = "0";
                 }}
             >
-                <i className="ri-arrow-left-s-line" style={{ fontSize: "20px", fontWeight: "bold" }}></i>
             </button>
         );
     }
@@ -342,7 +340,7 @@ export default function ServicesPage() {
                                 </div>
                             ))}
                         </Slider>
-                    </div>
+                            </div>
                 </div>
             </div>
             <FooterThree />
@@ -362,12 +360,45 @@ export default function ServicesPage() {
                     align-items: stretch;
                 }
 
+                /* Slick'in default arrow'larını gizle */
+                .services-carousel .slick-arrow {
+                    display: none !important;
+                }
+                
                 .services-carousel .services-next-arrow,
                 .services-carousel .services-prev-arrow {
                     opacity: 1 !important;
                     top: 50% !important;
                     transform: translateY(-50%) !important;
                     margin-top: 0 !important;
+                    display: flex !important;
+                }
+                
+                /* CSS ile tek ok çiz */
+                .services-carousel .services-next-arrow::before {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-right: 2px solid currentColor;
+                    border-top: 2px solid currentColor;
+                    transform: rotate(45deg);
+                }
+                
+                .services-carousel .services-prev-arrow::before {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-left: 2px solid currentColor;
+                    border-bottom: 2px solid currentColor;
+                    transform: rotate(45deg);
+                }
+                
+                /* Tüm içeriği gizle */
+                .services-carousel .services-next-arrow > *,
+                .services-carousel .services-prev-arrow > * {
+                    display: none !important;
                 }
 
                 .services-carousel .services-next-arrow:hover,

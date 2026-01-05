@@ -24,8 +24,8 @@ export default function ContactPage() {
             {/* Görseli yukarı kaydırmak için background-position Y eksenini %20 yap ve biraz zoom-out */}
             <Breadcumb
                 title="CONTACT US"
-                bgImage="/main-assets/image/contact.jpeg"
-                bgPosition="center 64%"
+                bgImage="/main-assets/image/contact.jpg"
+                bgPosition="center 35%"
 
             />
 

@@ -145,7 +145,6 @@ const Locations = () => {
       const marker = new Marker({
         position: location.coordinates,
         map: googleMap,
-        title: location.name,
         icon: {
           // Custom pin SVG without number; keeps UI clean as requested
           url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
@@ -195,9 +194,6 @@ const Locations = () => {
 
     const contentHtml = `
       <div style="padding: 20px; max-width: 350px; font-family: Arial, sans-serif; border-radius: 8px;">
-        <div style="text-align: center;">
-          <img src="${location.flag}" alt="${location.country}" style="display: inline-block; width: 60%; height: auto; object-fit: cover;" />
-        </div>
         <h3 style="margin: 0 0 15px 0; color: #1f2937; font-size: 20px; font-weight: bold; line-height: 1.2;">${location.name}</h3>
         <div style="margin-bottom: 12px; font-size: 14px; color: #4b5563; line-height: 1.4;">
           <div style="margin-bottom: 4px;"><strong>Address:</strong> ${location.address}</div>
@@ -210,9 +206,6 @@ const Locations = () => {
           <div style="margin-bottom: 4px;"><strong>Phone:</strong> <a href="tel:${location.phone}" style="color: #3B82F6; text-decoration: none;">${location.phone}</a></div>
           ${location.mobile ? `<div style=\"margin-bottom: 4px;\"><strong>Mobile:</strong> <a href=\"tel:${location.mobile}\" style=\"color: #3B82F6; text-decoration: none;\">${location.mobile}</a></div>` : ''}
           <div><strong>Email:</strong> <a href="mailto:${location.email}" style="color: #3B82F6; text-decoration: none;">${location.email}</a></div>
-        </div>
-        <div style="text-align: center; margin-top: 12px;">
-          <a href="${location.canonical}" style="display: inline-block; padding: 10px 16px; background-color: #2563eb; color: #ffffff; border-radius: 6px; text-decoration: none; font-weight: 600;">View ${location.primaryKeyword}</a>
         </div>
       </div>
     `;
@@ -262,7 +255,7 @@ const Locations = () => {
                 )
               }              
               <p className="sec-text" style={{ lineHeight: '1.5', textAlign: 'center' }}>
-              Task-in Services is a globally operating marine safety service provider headquartered in the Netherlands, with three 
+              Task-in Marine is a globally operating marine safety service provider headquartered in the Netherlands, with three 
               strategically located branches. We extend our services across 60 ports in ARA, Europe, Scandinavia and the Baltics, providing fast, regulation-compliant support wherever needed.
               </p>
             </div>
@@ -347,14 +340,6 @@ const Locations = () => {
                       }} />
                     )}
                     
-                    <h4 style={{ 
-                      margin: '0 0 8px 0', 
-                      fontSize: '16px', 
-                      fontWeight: 'bold',
-                      color: '#1f2937'
-                    }}>
-                      {location.name}
-                    </h4>
                     <p style={{ 
                       margin: '0 0 4px 0', 
                       fontSize: '14px', 

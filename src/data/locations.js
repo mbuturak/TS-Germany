@@ -7,7 +7,7 @@ export const locations = [
     shortName: 'Netherlands',
     primaryKeyword: '',
     office: {
-      name: 'Task-in Services B.V.',
+      name: '',
       addressLine1: 'Koolhovenstraat 1',
       city: '3125 BT Schiedam',
       region: 'South Holland',
@@ -65,7 +65,7 @@ export const locations = [
     shortName: 'Finland',
     primaryKeyword: 'Marine Safety Finland',
     office: {
-      name: 'Task-in Baltic Services Oy',
+      name: '',
       addressLine1: 'Tiiriskankaantie 8',
       city: '15860 Hollola',
       region: 'Lahti',
@@ -173,7 +173,7 @@ export const locations = [
     shortName: 'Germany',
     primaryKeyword: 'Marine Safety Germany',
     office: {
-      name: 'Task-in Services GmbH',
+      name: '',
       addressLine1: 'Theodor-Storm-Straße 1',
       city: '21218 Seevetal',
       region: 'Hamburg',

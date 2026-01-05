@@ -82,7 +82,7 @@ At Task-in Services, I concentrate on maintaining clear communication, supportin
     return (
         <>
             <HeaderFour />
-            <Breadcumb title="MEET OUR TEAM"  bgImage="/main-assets/image/contacus2.jpg" bgPosition="center 70%"  />
+            <Breadcumb title="MEET OUR TEAM"  bgImage="/main-assets/image/about.png" zoom={75} bgPosition="center 25%"  />
             <div className="container">
                 <div className="row justify-content-center">   
                     <div className="col-12">

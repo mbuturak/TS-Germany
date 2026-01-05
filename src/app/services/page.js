@@ -211,7 +211,7 @@ export default function ServicesPage() {
                     e.currentTarget.style.marginTop = "0";
                 }}
             >
-                <i className="ri-arrow-right-line" style={{ fontSize: "20px", fontWeight: "bold" }}></i>
+                <i className="ri-arrow-right-s-line" style={{ fontSize: "20px", fontWeight: "bold" }}></i>
             </button>
         );
     }
@@ -264,7 +264,7 @@ export default function ServicesPage() {
                     e.currentTarget.style.marginTop = "0";
                 }}
             >
-                <i className="ri-arrow-left-line" style={{ fontSize: "20px", fontWeight: "bold" }}></i>
+                <i className="ri-arrow-left-s-line" style={{ fontSize: "20px", fontWeight: "bold" }}></i>
             </button>
         );
     }

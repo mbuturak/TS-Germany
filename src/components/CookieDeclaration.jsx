@@ -32,16 +32,27 @@ export default function CookieDeclaration() {
       className="cookie-declaration-btn"
       onClick={handleShowCookieSettings}
       style={{
-        background: '#0066cc',
-        color: 'white',
-        border: 'none',
-        padding: '10px 20px',
-        borderRadius: '5px',
+        background: 'transparent',
+        color: '#ffffff',
+        border: '1px solid rgba(255, 255, 255, 0.3)',
+        padding: '8px 16px',
+        borderRadius: '4px',
         cursor: 'pointer',
-        fontSize: '14px',
+        fontSize: '13px',
+        fontWeight: 400,
+        transition: 'all 0.3s ease',
+        marginTop: '10px',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+        e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.5)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = 'transparent';
+        e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.3)';
       }}
     >
-      Cookie Ayarları
+      Cookie Settings
     </button>
   );
 }

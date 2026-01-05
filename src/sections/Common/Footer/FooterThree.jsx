@@ -42,11 +42,17 @@ const FooterThree = () => {
             <div className="copyright-wrap">
                 <div className="container">
                     <div className="row gy-3 justify-content-center">
-                        <div className="col-auto align-self-center"><p className="copyright-text text-center">© 2025 <a href="#">Task-In Marine</a>  |  All rights reserved</p></div>
+                        <div className="col-auto align-self-center">
+                            <p className="copyright-text text-center">
+                                © 2025 <a href="#">Task-In Marine</a>  |  All rights reserved
+                            </p>
+                            <div style={{ textAlign: 'center', marginTop: '12px' }}>
+                                <CookieDeclaration />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <CookieDeclaration />
         </footer>
     );
 };

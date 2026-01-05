@@ -141,7 +141,6 @@ const HeaderFour = () => {
                                                                             <li><Link href="/services#navigation-audits">Navigation Audits</Link></li>
                                                                             <li><Link href="/services#mooring-audits">Mooring Audits</Link></li>
                                                                             <li><Link href="/services#marpol">MARPOL Investigation & Environmental Compliance</Link></li>
-                                                                            <li><Link href="/services#us-court">US Court Appointed Monitor & Third-Party Auditor</Link></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -155,18 +154,11 @@ const HeaderFour = () => {
                                                                             <li><Link href="/services#cargo-contamination">Cargo Contamination and Claims Investigation</Link></li>
                                                                             <li><Link href="/services#loss-control">Loss Control & Dispute Resolution</Link></li>
                                                                             <li><Link href="/services#remote-tanker">Remote Tanker Advisory Services</Link></li>
-                                                                            <li><Link href="/services#filtration">Cargo Filtration Systems</Link></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-lg-3 col-md-6">
                                                                     <div className="mega-menu-column">
-                                                                        <h6 className="mega-menu-title">EXPERT WITNESS/LITIGATION</h6>
-                                                                        <ul>
-                                                                            <li><Link href="/services#expert-reporting">Expert Reporting & Process</Link></li>
-                                                                            <li><Link href="/services#digital-reconstruction">Digital Incident Reconstruction</Link></li>
-                                                                            <li><Link href="/services#data-analysis">Marine Accident Data Analysis Suite</Link></li>
-                                                                        </ul>
                                                                         <h6 className="mega-menu-title" style={{ marginTop: '30px' }}>CARGO EXPERTISE</h6>
                                                                         <ul>
                                                                             <li><Link href="/services#cement">Cement in Bulk</Link></li>

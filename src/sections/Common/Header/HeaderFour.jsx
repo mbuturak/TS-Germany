@@ -91,11 +91,6 @@ const HeaderFour = () => {
                         <div className="header-navbar-logo d-none d-lg-block" style={headerLogoStyle}>
                             <Link href="/"> <Image src="/main-assets/image/logo.svg" alt="logo" width={155} height={100} /></Link>
                         </div>
-                        {/* Slogan positioned in top-right corner; right offset adapts on mobile */}
-                        <div className="header-slogan" style={{ position: 'absolute', top: '25px', right: sloganRight, zIndex: 1000, pointerEvents: 'none' }}>
-                            {/* Slogan uses responsive width and proportional height */}
-                            <Image src="/main-assets/image/slogan.png" alt="slogan" width={sloganWidth} height={sloganHeight} />
-                        </div>
                         <div className="logo-bg"></div>
                         <div className="container">
                             <div className="row align-items-center justify-content-between home-two-header-justify-content-extra">
@@ -123,7 +118,80 @@ const HeaderFour = () => {
 
                                                 </ul>
                                             </li>
-                                            <li><Link href="/services">SERVICES</Link></li>
+                                            <li className="menu-item-has-children">
+                                                <Link href="/services">SERVICES</Link>
+                                                <ul className="sub-menu mega-menu">
+                                                    <li>
+                                                        <div className="mega-menu-content">
+                                                            <div className="row">
+                                                                <div className="col-lg-3 col-md-6">
+                                                                    <div className="mega-menu-column">
+                                                                        <h6 className="mega-menu-title">MARINE SURVEY</h6>
+                                                                        <ul>
+                                                                            <li><Link href="/services#condition-surveys">Condition Surveys</Link></li>
+                                                                            <li><Link href="/services#pre-purchase">Pre-Purchase Inspection</Link></li>
+                                                                            <li><Link href="/services#trip-tow">Trip & Tow Survey</Link></li>
+                                                                            <li><Link href="/services#on-off-hire">On-Hire/Off-Hire Survey</Link></li>
+                                                                            <li><Link href="/services#bunker">Bunker Quantity Survey</Link></li>
+                                                                            <li><Link href="/services#draft">Draft Survey</Link></li>
+                                                                            <li><Link href="/services#collision">Collision and Grounding</Link></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="col-lg-3 col-md-6">
+                                                                    <div className="mega-menu-column">
+                                                                        <h6 className="mega-menu-title">COMPLIANCE AUDITS</h6>
+                                                                        <ul>
+                                                                            <li><Link href="/services#marine-audits">Marine Audits</Link></li>
+                                                                            <li><Link href="/services#navigation-audits">Navigation Audits</Link></li>
+                                                                            <li><Link href="/services#mooring-audits">Mooring Audits</Link></li>
+                                                                            <li><Link href="/services#marpol">MARPOL Investigation & Environmental Compliance</Link></li>
+                                                                            <li><Link href="/services#us-court">US Court Appointed Monitor & Third-Party Auditor</Link></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="col-lg-3 col-md-6">
+                                                                    <div className="mega-menu-column">
+                                                                        <h6 className="mega-menu-title">LIQUID/GAS CARGO EXPERTS</h6>
+                                                                        <ul>
+                                                                            <li><Link href="/services#crude-oil">Crude Oil & Product Tankers</Link></li>
+                                                                            <li><Link href="/services#chemical">Chemical Tankers</Link></li>
+                                                                            <li><Link href="/services#gas-tankers">Gas Tankers - LNG & LPG</Link></li>
+                                                                            <li><Link href="/services#cargo-contamination">Cargo Contamination and Claims Investigation</Link></li>
+                                                                            <li><Link href="/services#loss-control">Loss Control & Dispute Resolution</Link></li>
+                                                                            <li><Link href="/services#remote-tanker">Remote Tanker Advisory Services</Link></li>
+                                                                            <li><Link href="/services#filtration">Cargo Filtration Systems</Link></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="col-lg-3 col-md-6">
+                                                                    <div className="mega-menu-column">
+                                                                        <h6 className="mega-menu-title">EXPERT WITNESS/LITIGATION</h6>
+                                                                        <ul>
+                                                                            <li><Link href="/services#expert-reporting">Expert Reporting & Process</Link></li>
+                                                                            <li><Link href="/services#digital-reconstruction">Digital Incident Reconstruction</Link></li>
+                                                                            <li><Link href="/services#data-analysis">Marine Accident Data Analysis Suite</Link></li>
+                                                                        </ul>
+                                                                        <h6 className="mega-menu-title" style={{ marginTop: '30px' }}>CARGO EXPERTISE</h6>
+                                                                        <ul>
+                                                                            <li><Link href="/services#cement">Cement in Bulk</Link></li>
+                                                                            <li><Link href="/services#coal">Coal in Bulk</Link></li>
+                                                                            <li><Link href="/services#minerals">Minerals, Ores and Concentrates</Link></li>
+                                                                            <li><Link href="/services#fertilizers">Fertilizers (All Grades)</Link></li>
+                                                                            <li><Link href="/services#liquefaction">Liquefaction of Solid Bulk Cargoes</Link></li>
+                                                                            <li><Link href="/services#grain">Grain Cargo</Link></li>
+                                                                            <li><Link href="/services#steel">Steel Cargo</Link></li>
+                                                                            <li><Link href="/services#containers">Containers</Link></li>
+                                                                            <li><Link href="/services#roro">RORO and PCTC</Link></li>
+                                                                            <li><Link href="/services#heavy-lift">Heavy Lift - Project Cargo</Link></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                             <li><Link href="/locations">LOCATIONS</Link></li>
                                             <li><Link href="/contact">CONTACT</Link></li>
                                         </ul>
@@ -139,6 +207,175 @@ const HeaderFour = () => {
                     </div>
                 </div>
             </header>
+            <style jsx global>{`
+                /* Mega Menu Container - Kompakt ve Okunaklı */
+                .main-menu ul.sub-menu.mega-menu {
+                    width: auto !important;
+                    min-width: 900px !important;
+                    max-width: 1200px !important;
+                    left: 50% !important;
+                    transform: translateX(-50%) translateY(-10px) scaleY(0) !important;
+                    transform-origin: top center !important;
+                    padding: 0 !important;
+                    background: #ffffff !important;
+                    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+                    border-radius: 0 0 8px 8px !important;
+                    border-top: 2px solid var(--theme-color, #0066cc) !important;
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+                    margin-top: 0 !important;
+                    z-index: 9999 !important;
+                }
+
+                .main-menu ul li:hover > ul.sub-menu.mega-menu {
+                    transform: translateX(-50%) translateY(0) scaleY(1) !important;
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                }
+
+                .main-menu ul.sub-menu.mega-menu li {
+                    display: block !important;
+                    width: 100% !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                }
+
+                /* Mega Menu Content - Daha Kompakt */
+                .mega-menu-content {
+                    width: 100% !important;
+                    padding: 30px 25px 25px 25px !important;
+                }
+
+                .mega-menu-content .row {
+                    margin: 0 -10px !important;
+                }
+
+                .mega-menu-content .row > div {
+                    padding: 0 10px !important;
+                }
+
+                /* Mega Menu Column */
+                .mega-menu-column {
+                    padding: 0 !important;
+                    margin-bottom: 0 !important;
+                }
+
+                /* Category Title - Daha Kompakt */
+                .mega-menu-title {
+                    font-size: 13px !important;
+                    font-weight: 700 !important;
+                    color: var(--theme-color, #0066cc) !important;
+                    margin-bottom: 12px !important;
+                    padding-bottom: 8px !important;
+                    border-bottom: 1px solid #e5e7eb !important;
+                    text-transform: uppercase !important;
+                    letter-spacing: 0.3px !important;
+                    line-height: 1.4 !important;
+                }
+
+                /* Service Links List */
+                .mega-menu-column ul {
+                    list-style: none !important;
+                    padding: 0 !important;
+                    margin: 0 0 20px 0 !important;
+                }
+
+                .mega-menu-column ul:last-child {
+                    margin-bottom: 0 !important;
+                }
+
+                .mega-menu-column ul li {
+                    display: block !important;
+                    margin: 0 0 4px 0 !important;
+                    padding: 0 !important;
+                }
+
+                /* Service Link - Daha Kompakt */
+                .mega-menu-column ul li a {
+                    display: block !important;
+                    padding: 6px 8px !important;
+                    font-size: 13px !important;
+                    font-weight: 400 !important;
+                    color: #4b5563 !important;
+                    text-transform: none !important;
+                    transition: all 0.2s ease !important;
+                    position: relative !important;
+                    border-radius: 4px !important;
+                    background: transparent !important;
+                    text-decoration: none !important;
+                    line-height: 1.5 !important;
+                }
+
+                .mega-menu-column ul li a:hover {
+                    color: var(--theme-color, #0066cc) !important;
+                    background: #f0f9ff !important;
+                    padding-left: 12px !important;
+                }
+
+                /* Remove default sub-menu styles for mega menu */
+                .main-menu ul.sub-menu.mega-menu a:before {
+                    display: none !important;
+                }
+
+                /* Responsive Design */
+                @media (max-width: 1199px) {
+                    .main-menu ul.sub-menu.mega-menu {
+                        min-width: 800px !important;
+                        max-width: 95% !important;
+                    }
+
+                    .mega-menu-content {
+                        padding: 25px 20px 20px 20px !important;
+                    }
+
+                    .mega-menu-content .row > div {
+                        padding: 0 8px !important;
+                    }
+                }
+
+                @media (max-width: 991px) {
+                    .main-menu ul.sub-menu.mega-menu {
+                        position: static !important;
+                        transform: none !important;
+                        width: 100% !important;
+                        min-width: auto !important;
+                        max-width: 100% !important;
+                        left: auto !important;
+                        padding: 0 !important;
+                        box-shadow: none !important;
+                        border-radius: 0 !important;
+                        border-top: none !important;
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                    }
+
+                    .mega-menu-content {
+                        padding: 20px 15px !important;
+                    }
+
+                    .mega-menu-column {
+                        margin-bottom: 25px !important;
+                    }
+
+                    .mega-menu-content .row > div {
+                        padding: 0 !important;
+                        margin-bottom: 20px !important;
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    .mega-menu-title {
+                        font-size: 12px !important;
+                        margin-bottom: 10px !important;
+                    }
+
+                    .mega-menu-column ul li a {
+                        font-size: 12px !important;
+                        padding: 5px 6px !important;
+                    }
+                }
+            `}</style>
         </div>
     );
 };

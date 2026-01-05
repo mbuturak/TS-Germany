@@ -9,25 +9,14 @@ const About = () => {
                     <div className="col-xl-6">
                         <div className="about-thumb2 mb-60 mb-xl-0">
                             <div className="about-img-1">
-                                <img src="/main-assets/image/About-us.jpeg" alt="img" />
+                                <img src="/main-assets/image/about_img.png" alt="img" />
                             </div>
                         </div>
                     </div>
                     <div className="col-xl-6">
                         <div className="title-area mb-25">
-                            <h3 className="sec-title">MARINE SAFETY EQUIPMENT INSPECTION & SERVICES</h3>
-                            <p className="sec-text">We provide high-quality LSA, FFE, and safety equipment solutions with certifications from leading maritime authorities worldwide.
-                            </p>
-                        </div>
-                        <div className="checklist mb-35">
-                            <ul>
-                                <li><img src="/main-assets/img/icon/about-checklsit-icon1-1.svg" alt="img" />Complete LSA Solutions (LSA)
-                                </li>
-                                <li><img src="/main-assets/img/icon/about-checklsit-icon1-1.svg" alt="img" />Complete Fire Fighting Equipment Services(FFE)</li>
-                                <li><img src="/main-assets/img/icon/about-checklsit-icon1-1.svg" alt="img" />Long-term Collaboration with Fleet Management Services</li>
-                                <li><Link href="/training-center"><img src="/main-assets/img/icon/about-checklsit-icon1-1.svg" alt="img" />Training engineers in-house Training Facility (LR Approved)</Link></li>
-                                <li><img src="/main-assets/img/icon/about-checklsit-icon1-1.svg" alt="img" />Safety equipment supplies and services</li>
-                            </ul>
+                            <h3 className="sec-title">Marine Engineering, Survey & Advisory Services</h3>
+                            <p className="sec-text">Our engineering company committed to delivering reliable, accurate, and innovative solutions to the maritime and offshore industries. With a strong technical foundation and a client-focused approach, we support shipowners, operators, and shipyards through every stage of a vessel’s lifecycle. Our work is based on internationally recognized standards and class society requirements, delivering precise analytical solutions for vessel design, modification, and operational performance.</p>
                         </div>
                         <div className="about-grid-wrap">
                             <div className="icon">
@@ -35,7 +24,7 @@ const About = () => {
                             </div>
                             <div className="about-grid-details">
                                 <h4 className="title">Our Mission</h4>
-                                <p className="text">To ensure maritime safety by providing reliable and certified safety equipment solutions that meet international standards.</p>
+                                <p className="text">To provide consistent, accurate, and independent marine engineering and survey services that enhance safety, quality, environmental responsibility, and regulatory compliance, in line with ISO 9001, ISO 14001, and ISO 45001 principles.</p>
                             </div>
                         </div>
                         <div className="about-grid-wrap">
@@ -44,7 +33,7 @@ const About = () => {
                             </div>
                             <div className="about-grid-details">
                                 <h4 className="title">Our Vision</h4>
-                                <p className="text">To become a leading global provider of maritime safety equipment, recognized for quality, compliance, and excellence.</p>
+                                <p className="text">To be a trusted global marine partner, recognized for quality-driven performance, safe operations, and sustainable maritime solutions, contributing to safer seas and responsible shipping worldwide.</p>
                             </div>
                         </div>
                     </div>

@@ -387,19 +387,6 @@ const Locations = () => {
                     }}>
                       {location.country}
                     </p>
-                    <div style={{ marginTop: '12px' }}>
-                      <Link
-                        href={location.path}
-                        style={{
-                          fontSize: '13px',
-                          fontWeight: 600,
-                          color: '#1d4ed8',
-                          textDecoration: 'none',
-                        }}
-                      >
-                        Explore {location.primaryKeyword}
-                      </Link>
-                    </div>
                   </div>
                 ))}
               </div>

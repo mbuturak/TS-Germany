@@ -58,8 +58,6 @@ export default function HomePage() {
       <HeaderFour />
       <VideoHero />
       <About />
-      <Service />
-      <Client />
       <Locations />
       <Contact />
       <FooterThree />

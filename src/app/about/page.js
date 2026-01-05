@@ -1,3 +1,4 @@
+"use client";
 import Breadcumb from "~/sections/About/Breadcumb";
 import HeaderFour from "~/sections/Common/Header/HeaderFour";
 import FooterThree from "~/sections/Common/Footer/FooterThree";
@@ -26,75 +27,114 @@ export default function AboutPage() {
             <Breadcumb title="ABOUT US" bgImage="/main-assets/image/about-bg.jpg" />
             <div className="about-area-2 space-top overflow-hidden no-anim-bar">
                 <div className="container">
-                    <div className="row gx-60 align-items-center flex-row-reverse">
+                    <div className="row gx-60 align-items-start flex-row-reverse">
                         <div className="col-xl-6">
-                            <div className="about-thumb2 mb-60 mb-xl-0">
-                                <div className="about-img-1">
-                                    {/* Next.js Image for optimization */}
-                                    <Image src="/main-assets/image/about.jpg" alt="About us" width={1200} height={800} priority />
+                            <div className="about-thumb2" style={{ paddingTop: '0' }}>
+                                <div className="about-img-1" style={{ marginBottom: '24px' }}>
+                                    <Image src="/main-assets/image/about-us-1.png" alt="About us" width={1200} height={800} priority />
                                 </div>
-
+                                <div className="about-img-1" style={{ marginBottom: '24px' }}>
+                                    <Image src="/main-assets/image/about-us-2.png" alt="About us" width={1200} height={800} priority />
+                                </div>
+                                <div className="about-img-1" style={{ marginBottom: '24px' }}>
+                                    <Image src="/main-assets/image/about-us-3.png" alt="About us" width={1200} height={800} priority />
+                                </div>
+                                <div className="about-img-1" style={{ marginBottom: '24px' }}>
+                                    <Image src="/main-assets/image/about-us-4.png" alt="About us" width={1200} height={800} priority />
+                                </div>
+                                <div className="about-img-1" style={{ marginBottom: '0' }}>
+                                    <Image src="/main-assets/image/about-us-6.png" alt="About us" width={1200} height={800} priority />
+                                </div>
                             </div>
                         </div>
                         <div className="col-xl-6">
-                            <div className="title-area mb-25">
-                                <h2 className="sec-title">
-                                    Your Safety, Our Priority
+                            <div className="title-area" style={{ paddingTop: '0' }}>
+                                <h2 className="sec-title" style={{ marginBottom: '20px' }}>
+                                    Engineering Services
                                 </h2>
-                                <p className="sec-text about-desc" style={{ lineHeight: '1.5', textAlign: 'justify' }}>
-                                    We are a dedicated company, specializing in inspection, maintenance, and calibration services for marine safety equipment. Our team is committed to delivering fast, regulation-compliant service with a focus on operational reliability and environmental responsibility.
-
-                                    Our Head Office in Rotterdam, Netherlands, we have fully operational branches in Finland, Germany and USA. With our dynamic team, we provide services in over 60 ports across Europe, the Baltics, the U.S., and more.
-
-                                    We offer the following services across these regions without restrictions:
-                                    <br />
-                                    <br />
-                                    •	FFE & LSA inspections (Annual, Biennial, 5-yearly, 10-yearly)
-                                    <br />
-                                    •	Lifeboat & Davit services (MSC.402(96) compliant)
-                                    <br />
-                                    •	Calibration Services (Portable , Fixed, ODME, OWS and etc)
-                                    <br />
-                                    •	Crane load testing (up to 1200 tons)
-                                    <br />
-                                    •	Marine safety equipment supply
-                                    <br />
-                                    <br />
-
-                                    We also operate an in-house training and testing facility, where our engineers undergo continuous technical training to stay ahead of evolving regulations and client expectations.
-
-                                    Task-in Services is approved by major class societies such as ABS, BV, DNV, NK RINA, LR, and KR, and authorized by leading flag states including Panama, The Netherlands, Liberia, and Bahamas.
+                                <p className="sec-text about-desc" style={{ lineHeight: '1.6', textAlign: 'justify', marginBottom: '24px' }}>
+                                    Our expertise covers hydrostatics, stability, structural analysis, seakeeping, manoeuvring, and regulatory compliance. By applying proven engineering methodologies and modern computational tools, we support shipowners, operators, shipyards, and designers in achieving safe, efficient, and compliant vessel operations.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">   <hr style={{ border: '0.5px dotted #000', margin: '20px 0' }} /> </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '40px', flexWrap: 'wrap', padding: '20px 0' }}>
-                        <div style={{ flex: '1 1 520px', maxWidth: '800px' }}>
-                            <div style={{ borderRadius: '12px', overflow: 'hidden', height: kemalBoxHeight }}>
-                                <Image src="/main-assets/image/ceo.jpg" alt="About us" width={1200} height={800} priority style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }} />
-                            </div>
-                        </div>
-                        <div style={{ flex: '1 1 520px', maxWidth: '800px' }}>
-                            <div style={{ background: '#fff', padding: '20px 24px', borderRadius: '12px', height: kemalBoxHeight, display: 'flex', flexDirection: 'column', overflowY: 'auto' }}>
-                                <h2 style={{ fontSize: '32px', lineHeight: 1.2, margin: '0 0 14px 0', fontWeight: 600 }}>Our Director</h2>
-                                <p style={{ lineHeight: 1.5, textAlign: 'justify', margin: 0 }}>
-                                    Kemal Taşkın is the Director and Founder of Task-in Services, established in 2021 in the Netherlands. He is an accomplished Marine Engineer with extensive expertise in ship machinery operations, safety systems, and technical maintenance.
-                                    <br />
-                                    <br />
-                                    Graduating from Istanbul Technical University’s Faculty of Maritime – Marine Engineering Department, Kemal began his career at sea, serving for several years as a ship engineer. This experience provided him with in-depth practical knowledge of engine room operations, mechanical systems, and onboard safety management.
-                                    <br />
-                                    <br />
-                                    Since founding Task-in Services, Kemal has led the company’s development into a trusted provider of marine and industrial safety solutions across Europe and the United States. The company delivers comprehensive inspection, maintenance, and certification services for life-saving and fire-fighting equipment, ensuring reliability, compliance, and operational safety for a wide range of clients.
-                                    <br />
-                                    <br />
-                                    Recognized for his hands-on leadership and commitment to quality, Kemal brings together strong technical insight with real-world experience to achieve consistent, high results. Outside of his professional endeavors, he is a devoted father of three, balancing his family life with a deep dedication to excellence and safety in every aspect of his work.
+                                <p className="sec-text about-desc" style={{ lineHeight: '1.6', textAlign: 'justify', marginBottom: '20px' }}>
+                                    Our engineering services are performed using recognized calculation methods, approved software tools, and applicable international standards, including SOLAS, MARPOL, the Intact and Damage Stability Codes, ICLL, and relevant Class Rules. We work closely with shipowners, operators, shipyards, and surveyors to ensure that all deliverables are suitable for Class and Flag approval.
                                 </p>
+                                <p className="sec-text about-desc" style={{ lineHeight: '1.6', textAlign: 'justify', marginBottom: '16px' }}>
+                                    We offer our clients a comprehensive range of engineering services, including:
+                                </p>
+                                <ul className="engineering-services-list" style={{
+                                    listStyle: 'none',
+                                    padding: 0,
+                                    margin: '0 0 20px 0',
+                                    lineHeight: '1.8'
+                                }}>
+                                    <li>Inclining Experiment Calculations</li>
+                                    <li>Weight Estimation and Weight Distribution Analysis</li>
+                                    <li>Deadweight Increase Studies for Various Vessel Types
+                                        <span style={{ fontStyle: 'italic',marginTop:'3px' }}> <br/>(including Container Vessels, Dry Cargo Ships, Multi-Purpose Vessels (MPV), Bulk Carriers, Tankers, Passenger Ships, Offshore Support Vessels (OSV), etc.), performed in accordance with applicable IMO regulations, Flag State requirements, and Classification Society Rules.
+                                        </span>
+                                    </li>
+                                    <li>Stability Calculations & Stability Booklets
+                                    <span style={{ fontStyle: 'italic',marginTop:'3px' }}> <br/>(Intact, Damage, Bulk Cargo, Grain, Heavy Lift, Special Purpose Vessels, etc.)</span>
+                                    </li>
+                                    <li>Load Master Development for Ships</li>
+                                    <li>Seakeeping & Manoeuvring Calculations</li>
+                                    <li>Dynamic Positioning (DP) Calculations</li>
+                                    <li>Freeboard & Tonnage Calculations
+                                    <span style={{ fontStyle: 'italic',marginTop:'3px' }}> <br/>(ICLL 66/88 and ITC 69 compliance)</span>
+                                    
+                                    </li>
+                                    <li>Model Tank Testing</li>
+                                    <li>Ballast Water Management Plan (BWMP) Preparation
+                                    <span style={{ fontStyle: 'italic',marginTop:'3px' }}> <br/>(in compliance with IMO Ballast Water Management Convention)</span>
+                                    
+                                    </li>
+                                    <li>Hull Structure Calculations</li>
+                                    <li>3D FEM Hull Analysis</li>
+                                    <li>Hatch Cover Strength Analysis</li>
+                                    <li>Fuel Consumption and Energy Efficiency Analysis <span style={{ fontStyle: 'italic',marginTop:'3px' }}> <br/>(supporting EEDI / EEXI / CII requirements)</span>
+                                    </li>
+                                    <li>Ballast Water Treatment System Modification & Installation</li>
+                                    <li>3D Modelling and Rendering Visualization</li>
+                                    <li>Workshop Documentation & Technical Drawings</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <style jsx global>{`
+                .engineering-services-list li {
+                    position: relative;
+                    padding-left: 24px;
+                    margin-bottom: 8px;
+                    color: #4b5563;
+                }
+                
+                .engineering-services-list li:before {
+                    content: "•";
+                    position: absolute;
+                    left: 0;
+                    color: var(--theme-color, #0066cc);
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                
+                .about-thumb2 .about-img-1 {
+                    width: 100%;
+                }
+                
+                .about-thumb2 .about-img-1 img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                
+                @media (max-width: 1199px) {
+                    .row.align-items-start {
+                        align-items: flex-start !important;
+                    }
+                }
+            `}</style>
             <FooterThree />
             <Scroll />
         </div>

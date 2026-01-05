@@ -105,7 +105,7 @@ const VideoHero = () => {
           }}
         >
           {/* Typing effect wrapper */}
-          <span className="typing">WE MAKE YOUR FLEET SAFER</span>
+          <span className="typing">PRECISE ENGINEERING & SURVEYS</span>
         </h1>
 
         <div
@@ -191,14 +191,14 @@ const VideoHero = () => {
           overflow: hidden; /* Hide the overflowing characters while typing */
           white-space: nowrap; /* Prevent text wrapping */
           border-right: 2px solid rgba(255,255,255,0.9); /* Caret */
-          /* 24ch matches the character count of the string including spaces */
+          /* "PRECISE ENGINEERING & SURVEYS" = 31 karakter (boşluklar dahil) */
           width: 0;
-          animation: typing 2.4s steps(24, end) 0.2s forwards, blink 0.9s step-end infinite;
+          animation: typing 3.5s steps(31, end) 0.2s forwards, blink 0.9s step-end 3.7s infinite;
         }
 
         @keyframes typing {
           from { width: 0; }
-          to { width: 24ch; }
+          to { width: 100%; }
         }
 
         @keyframes blink {
@@ -208,7 +208,10 @@ const VideoHero = () => {
 
         /* Respect smaller screens: slightly thinner caret */
         @media (max-width: 480px) {
-          .typing { border-right-width: 1.5px; }
+          .typing { 
+            border-right-width: 1.5px;
+            animation: typing 3.5s steps(31, end) 0.2s forwards, blink 0.9s step-end 3.7s infinite;
+          }
         }
       `}</style>
     </div>

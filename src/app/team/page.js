@@ -98,49 +98,6 @@ At Task-in Services, I concentrate on maintaining clear communication, supportin
                     </div>
                 </div>
             </div>
-            <div className="service-area-2 overflow-hidden shape-mockup-wrap background-image" id="service-sec">
-
-                <div className="container">
-                    {/* Full-width vertical cards with alternating image/text alignment */}
-                    {teams.map((item, index) => (
-                        <div key={item.name} className="service-card style2 mb-5" style={{ background: '#fff', borderRadius: '8px', padding: '10px', marginTop: '25px' }}>
-                            <div className="row align-items-start">
-                                {/* Image always on the left */}
-                                <div className="col-md-8 team-image-col">
-                                    <Image
-                                        src={item.image || "/main-assets/image/logo.svg"}
-                                        alt={item.name}
-                                        width={1000}
-                                        height={1000}
-                                        className="team-card-img"
-                                        style={{ 
-                                            width: '100%', 
-                                            objectFit: item.image ? 'cover' : 'contain', 
-                                            backgroundColor: '#f8f9fa',
-                                            padding: item.image ? '0' : '20px',
-                                            borderRadius: '8px', 
-                                            display: 'block', 
-                                            ...item.style 
-                                        }}
-                                    />
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="service-card_content" style={{ padding: '16px 8px', width: '100%' }}>
-                                        <h4 className="service-card_title" style={{ marginTop: 0, marginBottom: '12px' }}>
-                                            <Link href={item.name}>{item.name} {item.position}</Link>
-                                        </h4>
-                                        <div className="service-card_text" style={{ marginBottom: 0, width: '100%', textAlign: 'justify', lineHeight: '1.6' }}>
-                                            <div dangerouslySetInnerHTML={{ __html: item.description }} />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-
-                </div>
-            </div>
-            <Client />
             <FooterThree />
             <Scroll />
                         {/* Override theme hover that turns text white on cards */}

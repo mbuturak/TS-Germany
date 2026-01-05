@@ -6,15 +6,15 @@ import Script from 'next/script';
 import CookiebotListener from '../components/CookiebotListener';
 import siteUrl from '~/utils/siteUrl';
 import "~/public/main-assets/css/fonts.css";
-const defaultTitle = 'Task-in Services | Global Marine LSE & FFE Experts ';
+const defaultTitle = 'Task-in Marine | Marine Survey & Engineering';
 const defaultDescription =
-  'Task-in Services delivers certified marine safety, fire-fighting and life-saving equipment support across Europe and the United States with 24/7 rapid response teams.';
+  'Marine engineering, designing, vessel surveys, cargo expertise and compliance audits for shipowners and operators. Reliable, Class-ready solutions worldwide.';
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: defaultTitle,
-    template: '%s | Task-in Services',
+    template: '%s | Task-in Marine',
   },
   description: defaultDescription,
   alternates: {
@@ -25,13 +25,13 @@ export const metadata = {
     url: siteUrl,
     title: defaultTitle,
     description: defaultDescription,
-    siteName: 'Task-in Services',
+    siteName: 'Task-in Marine',
     images: [
       {
         url: `${siteUrl}/main-assets/img/logo-white.svg`,
         width: 600,
         height: 315,
-        alt: 'Task-in Services - Marine Safety Experts',
+        alt: 'Task-in Marine - Marine Survey & Engineering',
       },
     ],
   },

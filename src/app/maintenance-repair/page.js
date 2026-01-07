@@ -28,62 +28,6 @@ export default function MaintenanceRepairPage() {
                         <div className="col-xl-12">
                             <div className="title-area" style={{ paddingTop: '0' }}>
                                 <p>
-                                    We are a shipowner-oriented maritime engineering, technical services, and safety solutions company established by professionals with extensive experience at sea, in shipyards, and within naval architecture and design offices. Our team is composed of Ship Masters, Marine Engineers, and Naval Architects who have been directly involved in vessel operations, technical management, newbuildings, dry-dockings, repairs, and regulatory compliance throughout their careers.
-                                </p>
-
-                                <p>
-                                    Our core strength is derived from Task-in Baltic Services, our Rotterdam-based operational company that has been actively serving the maritime sector for many years. This well-established in-service organization forms the backbone of our technical capability, operational know-how, and safety expertise. The experience gained through Task-in Baltic Services allows us to deliver solutions that are practical, proven, and fully aligned with real shipboard and shipyard conditions.
-                                </p>
-
-                                <p>
-                                    Building on this strong operational foundation, we decided to expand our scope into comprehensive marine solutions by bringing together senior professionals with decades of hands-on experience.
-                                </p>
-
-                                <p>
-                                    Alper Kabaca, who has served for many years at sea as a Marine Engineer and later held key roles as QHSE & Technical Manager and Designated Person Ashore (DPA), contributes extensive expertise in technical management systems, safety culture, and regulatory compliance.
-                                </p>
-
-                                <p>
-                                    He is joined by Egemen Bal, who has sailed for many years as a Tanker Vessel Master and subsequently held senior managerial positions in an international company specializing in LSA and FFE services, adding deep operational and safety expertise, particularly within tanker operations and life-saving and firefighting systems.
-                                </p>
-
-                                <p>
-                                    With operational branches in Rotterdam / Netherlands, Hamburg / Germany, and Hollola / Finland, we provide fast-response technical services across Europe and the Middle East. We act as a technical extension of shipowners' organizations, fully understanding their priorities: asset protection, safety, compliance, cost efficiency, and uninterrupted vessel operation.
-                                </p>
-
-                                <p>
-                                    Our services are structured under three main pillars:
-                                </p>
-
-                                <h3><b>Engineering & Consultancy</b></h3>
-
-                                <p>
-                                    We provide independent engineering and technical consultancy services including vessel modifications, retrofits, feasibility studies, technical evaluations, and class and flag compliance support.
-                                </p>
-
-                                <p>
-                                    In addition, we offer specialized FFE, LSA, and maritime safety consultancy services. Through our Rotterdam-based LSA training center, we deliver:
-                                </p>
-
-                                <ul>
-                                    <li>Practical firefighting training on board vessels and at shore-based facilities</li>
-                                    <li>LSA and FFE equipment operation and maintenance training</li>
-                                    <li>Safety system consultancy, procedures development, and implementation support</li>
-                                </ul>
-
-                                <p>
-                                    These services are designed to strengthen onboard safety culture while ensuring full compliance with SOLAS, class, and flag state requirements.
-                                </p>
-
-                                <h3><b>Survey, Audit & Shipowner Representation</b></h3>
-
-                                <p>
-                                    We act as the shipowner's technical representative during condition surveys, pre-purchase inspections, class and statutory audits, newbuilding supervision, conversions, and repair projects. Our role is to safeguard the shipowner's technical and commercial interests by ensuring quality control, technical accuracy, schedule adherence, and cost transparency.
-                                </p>
-
-                                <h3><b>Maintenance, Repair & Spare Parts Supply</b></h3>
-
-                                <p>
                                     We support shipowners with planned and corrective maintenance, dry-docking management, damage repairs, and technical troubleshooting. Our shipyard and seagoing background enables us to manage repair scopes efficiently, minimize off-hire time, and ensure compliance with class and flag requirements.
                                 </p>
 

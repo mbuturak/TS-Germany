@@ -35,19 +35,13 @@ export default function AboutPage() {
                                 </p>
 
                                 <p>
-                                    Our core strength is derived from Task-in Baltic Services, our Rotterdam-based operational company that has been actively serving the maritime sector for many years. This well-established in-service organization forms the backbone of our technical capability, operational know-how, and safety expertise. The experience gained through Task-in Baltic Services allows us to deliver solutions that are practical, proven, and fully aligned with real shipboard and shipyard conditions.
+                                    Our core strength is derived from Task-in Marine, our Rotterdam-based operational company that has been actively serving the maritime sector for many years. This well-established in-service organization forms the backbone of our technical capability, operational know-how, and safety expertise. The experience gained through Task-in Marine allows us to deliver solutions that are practical, proven, and fully aligned with real shipboard and shipyard conditions.
                                 </p>
 
                                 <p>
                                     Building on this strong operational foundation, we decided to expand our scope into comprehensive marine solutions by bringing together senior professionals with decades of hands-on experience.
-                                </p>
-
-                                <p>
                                     Alper Kabaca, who has served for many years at sea as a Marine Engineer and later held key roles as QHSE & Technical Manager and Designated Person Ashore (DPA), contributes extensive expertise in technical management systems, safety culture, and regulatory compliance.
-                                </p>
-
-                                <p>
-                                    He is joined by Egemen Bal, who has sailed for many years as a Tanker Vessel Master and subsequently held senior managerial positions in an international company specializing in LSA and FFE services, adding deep operational and safety expertise, particularly within tanker operations and life-saving and firefighting systems.
+                                    He is joined by Egemen Bal, who has sailed for many years as a Tanker Vessel Master and subsequently held senior managerial positions in an international company specializing in LSA and FFE services, adding deep operational and safety expertise, particularly within tanker operations and life-saving and firefighting systems.                                
                                 </p>
 
                                 <p>
@@ -95,7 +89,7 @@ export default function AboutPage() {
                                 </p>
 
                                 <p>
-                                    By combining seagoing experience, engineering expertise, shipyard know-how, safety specialization, and the strong operational foundation of Task-in Baltic Services, we deliver technically sound, implementation-driven solutions. We position ourselves as a long-term technical and safety partner for shipowners focused on reliable, compliant, and sustainable vessel operations.
+                                    By combining seagoing experience, engineering expertise, shipyard know-how, safety specialization, and the strong operational foundation of Task-in Marine, we deliver technically sound, implementation-driven solutions. We position ourselves as a long-term technical and safety partner for shipowners focused on reliable, compliant, and sustainable vessel operations.
                                 </p>
                             </div>
                         </div>

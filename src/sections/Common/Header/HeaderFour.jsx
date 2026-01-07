@@ -124,11 +124,8 @@ const HeaderFour = () => {
                                                                         <h6 className="mega-menu-title"><Link href="/engineering-consultancy">ENGINEERING & CONSULTANCY</Link></h6>
                                                                         <ul>
                                                                             <li><Link href="/services#remote-tanker">Remote Tanker Advisory Services</Link></li>
-                                                                            <li><Link href="/services#loss-control">Loss Control & Dispute Resolution</Link></li>
-                                                                            <li><Link href="/services#cargo-contamination">Cargo Contamination and Claims Investigation</Link></li>
                                                                             <li><Link href="/services#crude-oil">Crude Oil & Product Tankers</Link></li>
                                                                             <li><Link href="/services#chemical">Chemical Tankers</Link></li>
-                                                                            <li><Link href="/services#gas-tankers">Gas Tankers - LNG & LPG</Link></li>
                                                                             <li><Link href="/services#cement">Cement in Bulk</Link></li>
                                                                             <li><Link href="/services#coal">Coal in Bulk</Link></li>
                                                                             <li><Link href="/services#minerals">Minerals, Ores and Concentrates</Link></li>

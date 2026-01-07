@@ -101,6 +101,7 @@ export default function AboutPage() {
                     margin-bottom: 20px;
                     color: #4b5563;
                     line-height: 1.7;
+                    text-align: justify;
                 }
                 
                 .title-area h3 {

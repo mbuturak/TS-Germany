@@ -17,14 +17,11 @@ import "~/public/main-assets/css/slick.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Image from "next/image";
-
-export default function AboutPage() {
-    const kemalBoxHeight = 580;
+export default function MaintenanceRepairPage() {
     return (
         <div style={{ overflow: 'hidden' }}>
             <HeaderFour />
-            <Breadcumb title="ABOUT US" bgImage="/main-assets/image/about-bg.jpg" />
+            <Breadcumb title="MAINTENANCE & REPAIR" bgImage="/main-assets/image/about-bg.jpg" />
             <div className="about-area-2 space-top overflow-hidden no-anim-bar">
                 <div className="container">
                     <div className="row gx-60 align-items-start flex-row-reverse">
@@ -142,22 +139,6 @@ export default function AboutPage() {
                     color: var(--theme-color, #0066cc);
                     font-weight: bold;
                     font-size: 18px;
-                }
-                
-                .about-thumb2 .about-img-1 {
-                    width: 100%;
-                }
-                
-                .about-thumb2 .about-img-1 img {
-                    width: 100%;
-                    height: auto;
-                    display: block;
-                }
-                
-                @media (max-width: 1199px) {
-                    .row.align-items-start {
-                        align-items: flex-start !important;
-                    }
                 }
             `}</style>
             <FooterThree />

@@ -119,48 +119,16 @@ const HeaderFour = () => {
                                                     <li>
                                                         <div className="mega-menu-content">
                                                             <div className="row">
-                                                                <div className="col-lg-3 col-md-6">
+                                                                <div className="col-lg-4 col-md-6">
                                                                     <div className="mega-menu-column">
-                                                                        <h6 className="mega-menu-title">MARINE SURVEY</h6>
+                                                                        <h6 className="mega-menu-title"><Link href="/engineering-consultancy">ENGINEERING & CONSULTANCY</Link></h6>
                                                                         <ul>
-                                                                            <li><Link href="/services#condition-surveys">Condition Surveys</Link></li>
-                                                                            <li><Link href="/services#pre-purchase">Pre-Purchase Inspection</Link></li>
-                                                                            <li><Link href="/services#trip-tow">Trip & Tow Survey</Link></li>
-                                                                            <li><Link href="/services#on-off-hire">On-Hire/Off-Hire Survey</Link></li>
-                                                                            <li><Link href="/services#bunker">Bunker Quantity Survey</Link></li>
-                                                                            <li><Link href="/services#draft">Draft Survey</Link></li>
-                                                                            <li><Link href="/services#collision">Collision and Grounding</Link></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-lg-3 col-md-6">
-                                                                    <div className="mega-menu-column">
-                                                                        <h6 className="mega-menu-title">COMPLIANCE AUDITS</h6>
-                                                                        <ul>
-                                                                            <li><Link href="/services#marine-audits">Marine Audits</Link></li>
-                                                                            <li><Link href="/services#navigation-audits">Navigation Audits</Link></li>
-                                                                            <li><Link href="/services#mooring-audits">Mooring Audits</Link></li>
-                                                                            <li><Link href="/services#marpol">MARPOL Investigation & Environmental Compliance</Link></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-lg-3 col-md-6">
-                                                                    <div className="mega-menu-column">
-                                                                        <h6 className="mega-menu-title">LIQUID/GAS CARGO EXPERTS</h6>
-                                                                        <ul>
+                                                                            <li><Link href="/services#remote-tanker">Remote Tanker Advisory Services</Link></li>
+                                                                            <li><Link href="/services#loss-control">Loss Control & Dispute Resolution</Link></li>
+                                                                            <li><Link href="/services#cargo-contamination">Cargo Contamination and Claims Investigation</Link></li>
                                                                             <li><Link href="/services#crude-oil">Crude Oil & Product Tankers</Link></li>
                                                                             <li><Link href="/services#chemical">Chemical Tankers</Link></li>
                                                                             <li><Link href="/services#gas-tankers">Gas Tankers - LNG & LPG</Link></li>
-                                                                            <li><Link href="/services#cargo-contamination">Cargo Contamination and Claims Investigation</Link></li>
-                                                                            <li><Link href="/services#loss-control">Loss Control & Dispute Resolution</Link></li>
-                                                                            <li><Link href="/services#remote-tanker">Remote Tanker Advisory Services</Link></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-lg-3 col-md-6">
-                                                                    <div className="mega-menu-column">
-                                                                        <h6 className="mega-menu-title">CARGO EXPERTISE</h6>
-                                                                        <ul>
                                                                             <li><Link href="/services#cement">Cement in Bulk</Link></li>
                                                                             <li><Link href="/services#coal">Coal in Bulk</Link></li>
                                                                             <li><Link href="/services#minerals">Minerals, Ores and Concentrates</Link></li>
@@ -171,6 +139,32 @@ const HeaderFour = () => {
                                                                             <li><Link href="/services#containers">Containers</Link></li>
                                                                             <li><Link href="/services#roro">RORO and PCTC</Link></li>
                                                                             <li><Link href="/services#heavy-lift">Heavy Lift - Project Cargo</Link></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="col-lg-4 col-md-6">
+                                                                    <div className="mega-menu-column">
+                                                                        <h6 className="mega-menu-title"><Link href="/survey-audit-owner-representation">SURVEY AUDIT & OWNER REPRESENTATION</Link></h6>
+                                                                        <ul>
+                                                                            <li><Link href="/services#condition-surveys">Condition Surveys</Link></li>
+                                                                            <li><Link href="/services#pre-purchase">Pre-Purchase Inspection</Link></li>
+                                                                            <li><Link href="/services#trip-tow">Trip & Tow Survey</Link></li>
+                                                                            <li><Link href="/services#on-off-hire">On-Hire/Off-Hire Survey</Link></li>
+                                                                            <li><Link href="/services#bunker">Bunker Quantity Survey</Link></li>
+                                                                            <li><Link href="/services#draft">Draft Survey</Link></li>
+                                                                            <li><Link href="/services#collision">Collision and Grounding</Link></li>
+                                                                            <li><Link href="/services#marine-audits">Marine Audits</Link></li>
+                                                                            <li><Link href="/services#navigation-audits">Navigation Audits</Link></li>
+                                                                            <li><Link href="/services#mooring-audits">Mooring Audits</Link></li>
+                                                                            <li><Link href="/services#marpol">MARPOL Investigation & Environmental Compliance</Link></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="col-lg-4 col-md-6">
+                                                                    <div className="mega-menu-column">
+                                                                        <h6 className="mega-menu-title"><Link href="/maintenance-repair">MAINTENANCE & REPAIR</Link></h6>
+                                                                        <ul>
+                                                                            {/* Maintenance & Repair services will be added here */}
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -198,7 +192,7 @@ const HeaderFour = () => {
                 /* Mega Menu Container - Kompakt ve Okunaklı */
                 .main-menu ul.sub-menu.mega-menu {
                     width: auto !important;
-                    min-width: 900px !important;
+                    min-width: 1000px !important;
                     max-width: 1200px !important;
                     left: 50% !important;
                     transform: translateX(-50%) translateY(-10px) scaleY(0) !important;
@@ -259,6 +253,14 @@ const HeaderFour = () => {
                     text-transform: uppercase !important;
                     letter-spacing: 0.3px !important;
                     line-height: 1.4 !important;
+                }
+                .mega-menu-title a {
+                    color: inherit !important;
+                    text-decoration: none !important;
+                    display: inline-block !important;
+                }
+                .mega-menu-title a:hover {
+                    color: var(--theme-color, #004a99) !important;
                 }
 
                 /* Service Links List */

@@ -8,7 +8,7 @@ import siteUrl from '~/utils/siteUrl';
 import "~/public/main-assets/css/fonts.css";
 const defaultTitle = 'Task-in Marine | Marine Survey & Engineering';
 const defaultDescription =
-  'Task-in Marine provides marine engineering, vessel surveys, cargo expertise, and compliance audits for shipowners and operators. Reliable, Class-ready solutions worldwide.';
+  'Task-in Marine (Taskin Marine) provides marine engineering, vessel surveys, cargo expertise, and compliance audits for shipowners and operators. Reliable, Class-ready solutions worldwide.';
 
 export const metadata = {
   metadataBase: new URL(siteUrl),

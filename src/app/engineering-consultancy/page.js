@@ -23,7 +23,7 @@ export default function EngineeringConsultancyPage() {
     return (
         <div style={{ overflow: 'hidden' }}>
             <HeaderFour />
-            <Breadcumb title="Engineering & Ship Operation Consultancy Services" bgImage="/main-assets/image/about-bg.jpg" />
+            <Breadcumb title="ENGINEERING & SHIP OPERATION CONSULTANCY SERVICES" bgImage="/main-assets/image/about-bg.jpg" />
             <div className="about-area-2 space-top overflow-hidden no-anim-bar">
                 <div className="container">
                     <div className="row gx-60 align-items-start">

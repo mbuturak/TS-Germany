@@ -35,7 +35,7 @@ export default function AboutPage() {
                                 </p>
 
                                 <p>
-                                    Our core strength is derived from Task-in Marine, our Rotterdam-based operational company that has been actively serving the maritime sector for many years. This well-established in-service organization forms the backbone of our technical capability, operational know-how, and safety expertise. The experience gained through Task-in Marine allows us to deliver solutions that are practical, proven, and fully aligned with real shipboard and shipyard conditions.
+                                    Our core strength is derived from <a href="https://task-inservices.com" target="_blank">Task-in Services</a>, our Rotterdam-based operational company that has been actively serving the maritime sector for many years. This well-established in-service organization forms the backbone of our technical capability, operational know-how, and safety expertise. The experience gained through <a href="https://task-inservices.com" target="_blank">Task-in Services</a> allows us to deliver solutions that are practical, proven, and fully aligned with real shipboard and shipyard conditions.
                                 </p>
 
                                 <p>
@@ -52,7 +52,7 @@ export default function AboutPage() {
                                     Our services are structured under three main pillars:
                                 </p>
 
-                                <h3><b>Engineering & Consultancy</b></h3>
+                                <h3><a href="/engineering-consultancy"><b>Engineering & Ship Operation Consultancy Services</b></a></h3>
 
                                 <p>
                                     We provide independent engineering and technical consultancy services including vessel modifications, retrofits, feasibility studies, technical evaluations, and class and flag compliance support.
@@ -72,13 +72,13 @@ export default function AboutPage() {
                                     These services are designed to strengthen onboard safety culture while ensuring full compliance with SOLAS, class, and flag state requirements.
                                 </p>
 
-                                <h3><b>Survey, Audit & Shipowner Representation</b></h3>
+                                <h3><a href="/survey-audit-owner-representation"><b>Survey, Audit & Shipowner Representation</b></a></h3>
 
                                 <p>
                                     We act as the shipowner's technical representative during condition surveys, pre-purchase inspections, class and statutory audits, newbuilding supervision, conversions, and repair projects. Our role is to safeguard the shipowner's technical and commercial interests by ensuring quality control, technical accuracy, schedule adherence, and cost transparency.
                                 </p>
 
-                                <h3><b>Maintenance, Repair & Spare Parts Supply</b></h3>
+                                <h3><a href="/maintenance-repair"><b>Maintenance, Repair & Spare Parts Supply</b></a></h3>
 
                                 <p>
                                     We support shipowners with planned and corrective maintenance, dry-docking management, damage repairs, and technical troubleshooting. Our shipyard and seagoing background enables us to manage repair scopes efficiently, minimize off-hire time, and ensure compliance with class and flag requirements.

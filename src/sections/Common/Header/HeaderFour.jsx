@@ -121,7 +121,7 @@ const HeaderFour = () => {
                                                             <div className="row">
                                                                 <div className="col-lg-4 col-md-6">
                                                                     <div className="mega-menu-column">
-                                                                        <h6 className="mega-menu-title"><Link href="/engineering-consultancy">Engineering & Ship Operation Consultancy</Link></h6>
+                                                                        <h6 className="mega-menu-title"><Link href="/engineering-consultancy">ENGINEERING & SHIP OPERATION CONSULTANCY SERVICES</Link></h6>
                                                                         <ul>
                                                                             <li><Link href="/services#remote-tanker">Remote Tanker Advisory Services</Link></li>
                                                                             <li><Link href="/services#crude-oil">Crude Oil & Product Tankers</Link></li>
@@ -159,7 +159,7 @@ const HeaderFour = () => {
                                                                 </div>
                                                                 <div className="col-lg-4 col-md-6">
                                                                     <div className="mega-menu-column">
-                                                                        <h6 className="mega-menu-title"><Link href="/maintenance-repair">MAINTENANCE & REPAIR</Link></h6>
+                                                                        <h6 className="mega-menu-title"><Link href="/maintenance-repair">MAINTENANCE, REPAIR & SPARE PARTS SUPPLY</Link></h6>
                                                                         <ul>
                                                                             {/* Maintenance & Repair services will be added here */}
                                                                         </ul>
@@ -222,7 +222,7 @@ const HeaderFour = () => {
                 /* Mega Menu Content - Daha Kompakt */
                 .mega-menu-content {
                     width: 100% !important;
-                    padding: 30px 25px 25px 25px !important;
+                    padding: 25px 20px 20px 20px !important;
                 }
 
                 .mega-menu-content .row {
@@ -241,7 +241,7 @@ const HeaderFour = () => {
 
                 /* Category Title - Daha Kompakt */
                 .mega-menu-title {
-                    font-size: 13px !important;
+                    font-size: 11px !important;
                     font-weight: 700 !important;
                     color: var(--theme-color, #0066cc) !important;
                     margin-bottom: 12px !important;
@@ -264,7 +264,7 @@ const HeaderFour = () => {
                 .mega-menu-column ul {
                     list-style: none !important;
                     padding: 0 !important;
-                    margin: 0 0 20px 0 !important;
+                    margin: 0 0 15px 0 !important;
                 }
 
                 .mega-menu-column ul:last-child {
@@ -280,7 +280,7 @@ const HeaderFour = () => {
                 /* Service Link - Daha Kompakt */
                 .mega-menu-column ul li a {
                     display: block !important;
-                    padding: 6px 8px !important;
+                    padding: 5px 8px !important;
                     font-size: 13px !important;
                     font-weight: 400 !important;
                     color: #4b5563 !important;
@@ -290,7 +290,7 @@ const HeaderFour = () => {
                     border-radius: 4px !important;
                     background: transparent !important;
                     text-decoration: none !important;
-                    line-height: 1.5 !important;
+                    line-height: 1.4 !important;
                 }
 
                 .mega-menu-column ul li a:hover {
@@ -307,16 +307,65 @@ const HeaderFour = () => {
                 /* Responsive Design */
                 @media (max-width: 1199px) {
                     .main-menu ul.sub-menu.mega-menu {
-                        min-width: 800px !important;
-                        max-width: 95% !important;
+                        min-width: calc(100vw - 40px) !important;
+                        max-width: calc(100vw - 20px) !important;
+                        left: 50% !important;
+                        transform: translateX(-50%) translateY(-10px) scaleY(0) !important;
+                    }
+
+                    .main-menu ul li:hover > ul.sub-menu.mega-menu {
+                        transform: translateX(-50%) translateY(0) scaleY(1) !important;
                     }
 
                     .mega-menu-content {
-                        padding: 25px 20px 20px 20px !important;
+                        padding: 20px 15px 20px 15px !important;
                     }
 
                     .mega-menu-content .row > div {
                         padding: 0 8px !important;
+                    }
+
+                    .mega-menu-column ul {
+                        margin: 0 0 12px 0 !important;
+                    }
+
+                    .mega-menu-column ul li a {
+                        padding: 4px 8px !important;
+                        font-size: 12.5px !important;
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    .main-menu ul.sub-menu.mega-menu {
+                        min-width: calc(100vw - 30px) !important;
+                        max-width: calc(100vw - 10px) !important;
+                        left: 50% !important;
+                        transform: translateX(-50%) translateY(-10px) scaleY(0) !important;
+                    }
+
+                    .main-menu ul li:hover > ul.sub-menu.mega-menu {
+                        transform: translateX(-50%) translateY(0) scaleY(1) !important;
+                    }
+
+                    .mega-menu-content {
+                        padding: 18px 12px 18px 12px !important;
+                    }
+
+                    .mega-menu-content .row {
+                        margin: 0 -5px !important;
+                    }
+
+                    .mega-menu-content .row > div {
+                        padding: 0 5px !important;
+                    }
+
+                    .mega-menu-column ul {
+                        margin: 0 0 10px 0 !important;
+                    }
+
+                    .mega-menu-column ul li a {
+                        padding: 3px 6px !important;
+                        font-size: 12px !important;
                     }
                 }
 

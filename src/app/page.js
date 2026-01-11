@@ -30,10 +30,10 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Task-in Marine",
-    "alternateName": "Task-in Marine Services",
+    "alternateName": ["Task-in Marine Services", "Taskin Marine", "Task-in Marine"],
     "url": siteUrl,
     "logo": `${siteUrl}/main-assets/image/logo.svg`,
-    "description": "Task-in Marine provides marine engineering, vessel surveys, cargo expertise, and compliance audits for shipowners and operators. Reliable, Class-ready solutions worldwide.",
+    "description": "Task-in Marine (also known as Taskin Marine) provides marine engineering, vessel surveys, cargo expertise, and compliance audits for shipowners and operators. Reliable, Class-ready solutions worldwide.",
     "sameAs": [
       // Add social media links if available
     ],
@@ -54,7 +54,10 @@ export default function HomePage() {
       "Ship Surveys",
       "Cargo Expertise",
       "Compliance Audits",
-      "Shipowner Representation"
+      "Shipowner Representation",
+      "Maintenance, Repair & Spare Parts Supply",
+      "Engineering & Ship Operation Consultancy Services",
+      "Survey, Audit & Shipowner Representation"
     ]
   };
 

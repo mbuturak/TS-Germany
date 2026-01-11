@@ -191,7 +191,7 @@ const HeaderFour = () => {
                     width: auto !important;
                     min-width: 1000px !important;
                     max-width: 1200px !important;
-                    left: 50% !important;
+                    left: 50vw !important;
                     transform: translateX(-50%) translateY(-10px) scaleY(0) !important;
                     transform-origin: top center !important;
                     padding: 0 !important;
@@ -309,7 +309,7 @@ const HeaderFour = () => {
                     .main-menu ul.sub-menu.mega-menu {
                         min-width: calc(100vw - 40px) !important;
                         max-width: calc(100vw - 20px) !important;
-                        left: 50% !important;
+                        left: 50vw !important;
                         transform: translateX(-50%) translateY(-10px) scaleY(0) !important;
                     }
 
@@ -339,7 +339,7 @@ const HeaderFour = () => {
                     .main-menu ul.sub-menu.mega-menu {
                         min-width: calc(100vw - 30px) !important;
                         max-width: calc(100vw - 10px) !important;
-                        left: 50% !important;
+                        left: 50vw !important;
                         transform: translateX(-50%) translateY(-10px) scaleY(0) !important;
                     }
 

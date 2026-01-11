@@ -29,23 +29,33 @@ export default function HomePage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Task-in Services",
+    "name": "Task-in Marine",
+    "alternateName": "Task-in Marine Services",
     "url": siteUrl,
-    "logo": `${siteUrl}/main-assets/img/logo.svg`,
-    "description": "Task-in Services delivers certified marine safety, fire-fighting and life-saving equipment support across Europe and the United States with 24/7 rapid response teams.",
+    "logo": `${siteUrl}/main-assets/image/logo.svg`,
+    "description": "Task-in Marine provides marine engineering, vessel surveys, cargo expertise, and compliance audits for shipowners and operators. Reliable, Class-ready solutions worldwide.",
     "sameAs": [
       // Add social media links if available
     ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
-      "areaServed": ["FI", "EU", "US"],
+      "areaServed": ["NL", "DE", "FI", "EU", "ME"],
       "availableLanguage": ["English"]
     },
     "areaServed": {
-      "@type": "Country",
-      "name": ["Finland", "Europe", "United States"]
-    }
+      "@type": "Place",
+      "name": ["Netherlands", "Germany", "Finland", "Europe", "Middle East"]
+    },
+    "knowsAbout": [
+      "Marine Engineering",
+      "Vessel Surveys",
+      "Marine Survey",
+      "Ship Surveys",
+      "Cargo Expertise",
+      "Compliance Audits",
+      "Shipowner Representation"
+    ]
   };
 
   return (

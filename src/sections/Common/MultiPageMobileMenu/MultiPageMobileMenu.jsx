@@ -66,7 +66,7 @@ const MultiPageMobileMenu = ({ isMenuOpen, setIsMenuOpen }) => {
                 <div className="mobile-menu-area">
                 <div className="mobile-logo">
                     <Link href="/">
-                        <Image src="/main-assets/img/logo.svg" alt="Task.in Services" width={120} height={60} />
+                        <Image src="/main-assets/img/logo.svg?v=marine" alt="Task.in Services" width={120} height={60} />
                     </Link>
                     <button onClick={handleMobileMenuClose} className="menu-toggle">
                         <i className="ri-close-line"></i>

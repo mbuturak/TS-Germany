@@ -89,7 +89,7 @@ const HeaderFour = () => {
                     <div className="menu-area" style={{ position: 'relative', padding: '15px 0' }}>
                         {/* Keep logo centered vertically in sticky state */}
                         <div className="header-navbar-logo d-none d-lg-block" style={headerLogoStyle}>
-                            <Link href="/"> <Image src="/main-assets/image/logo.svg" alt="logo" width={155} height={100} /></Link>
+                            <Link href="/"> <Image src="/main-assets/image/logo.svg?v=marine" alt="logo" width={155} height={100} /></Link>
                         </div>
                         <div className="logo-bg"></div>
                         <div className="container">
@@ -97,7 +97,7 @@ const HeaderFour = () => {
                                 {/* Hide mobile logo entirely; desktop logo above remains visible */}
                                 <div className="col-auto d-none">
                                     <div className="header-logo">
-                                        <Link href="/"><Image src="/main-assets/img/logo.svg" alt="logo" width={120} height={60} /> </Link>
+                                        <Link href="/"><Image src="/main-assets/img/logo.svg?v=marine" alt="logo" width={120} height={60} /> </Link>
                                     </div>
                                 </div>
                                 <div className="col-auto ms-xxl-0">

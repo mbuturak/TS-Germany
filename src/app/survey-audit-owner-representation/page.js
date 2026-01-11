@@ -29,35 +29,74 @@ export default function SurveyAuditOwnerRepresentationPage() {
                     <div className="row gx-60 align-items-start">
                         <div className="col-xl-6">
                             <div className="title-area survey-left" style={{ paddingTop: '0' }}>
-                                <h4>Survey, Audit &amp; Owner Representation</h4>
                                 <p>
-                                    At Task-In Marine, we provide independent survey, audit, and shipowner representation services with a strong focus on quality assurance, risk management, environmental responsibility, and occupational health and safety.
-                                </p>
-                                <p>
-                                    We represent shipowners during surveys, audits, newbuildings, conversions, and repair projects, ensuring that all activities are planned, controlled, and executed in compliance with applicable statutory requirements, class rules, contractual obligations, and international standards.
-                                </p>
-                                <p>
-                                    Our structured approach is based on process control, continuous improvement, and evidence-based reporting, enabling early identification of technical non-conformities, safety risks, and environmental impacts. This allows corrective actions to be implemented efficiently, minimizing delays, rework, and operational disruptions.
+                                    We provide independent survey, audit, and shipowner representation services designed to protect shipowners' technical and commercial interests. Our experienced surveyors and auditors operate on behalf of owners, managers, and charterers, delivering accurate assessments, regulatory compliance, and practical recommendations based on real operational conditions.
                                 </p>
 
-                                <p><b>Scope of services:</b></p>
-                                <ul className="survey-list">
-                                    <li>Shipowner representation during newbuilding and conversion projects</li>
-                                    <li>Pre-purchase, condition, and damage surveys</li>
-                                    <li>Repair and dry-docking supervision and verification</li>
-                                    <li>ISM, ISPS, and MLC audit preparation and support</li>
-                                    <li>Class and flag state attendance and coordination</li>
-                                    <li>Quality control inspections, progress monitoring, and punch-list management</li>
-                                    <li>Technical reporting with objective findings and photographic evidence</li>
-                                    <li>Internal audits</li>    
-                                    <li>Pre- vetting inspection and audits</li>
-                                </ul>
+                                <h3><b>Condition Surveys</b></h3>
 
                                 <p>
-                                    All assignments are carried out with due consideration to safe working practices, hazard identification, risk assessment, and environmental protection, supporting our clients’ commitments to quality management (ISO 9001), environmental management (ISO 14001), and occupational health and safety management (ISO 45001).
+                                    We conduct detailed condition surveys to assess the overall technical and structural condition of vessels. Our surveys provide shipowners with a clear understanding of asset condition, maintenance status, and potential risks, supporting informed technical and commercial decision-making.
                                 </p>
+
+                                <h3><b>Pre-Purchase Inspection</b></h3>
+
                                 <p>
-                                    With experienced surveyors and a clear, documented methodology, Task-In Marine delivers consistent, compliant, and owner-focused oversight across every project stage.
+                                    Our pre-purchase inspections offer an independent and comprehensive evaluation of vessels prior to acquisition. We identify technical deficiencies, compliance gaps, and operational risks, enabling shipowners and investors to accurately assess vessel value and future liabilities.
+                                </p>
+
+                                <h3><b>On-Hire / Off-Hire Survey</b></h3>
+
+                                <p>
+                                    We perform on-hire and off-hire surveys to document vessel condition at the commencement or completion of charter periods. Our objective assessments protect the interests of shipowners and charterers by clearly identifying damages, deficiencies, and responsibilities.
+                                </p>
+
+                                <h3><b>Bunker Quantity Survey</b></h3>
+
+                                <p>
+                                    Our bunker quantity surveys ensure accurate measurement of fuel quantities during bunkering operations. We protect shipowners and charterers by verifying delivered quantities, identifying discrepancies, and providing transparent, verifiable documentation.
+                                </p>
+
+                                <h3><b>Draft Survey</b></h3>
+
+                                <p>
+                                    We conduct draft surveys to determine cargo quantities with precision and reliability. Our experienced surveyors apply recognized methodologies to deliver accurate results, supporting commercial settlements and minimizing disputes.
+                                </p>
+
+                                <h3><b>Collision and Grounding</b></h3>
+
+                                <p>
+                                    We provide technical surveys and damage assessments following collision and grounding incidents. Our team supports shipowners with damage evaluation, repair recommendations, and liaison with class societies, insurers, and other stakeholders.
+                                </p>
+
+                                <h3><b>Marine Audits</b></h3>
+
+                                <p>
+                                    Our marine audits assess vessel operations, management systems, and onboard practices against industry standards and regulatory requirements. We help shipowners identify gaps, improve operational performance, and maintain compliance.
+                                </p>
+
+                                <h3><b>Navigation Audits</b></h3>
+
+                                <p>
+                                    We perform navigation audits focusing on bridge procedures, navigational equipment, passage planning, and compliance with international regulations. Our audits support safe navigation practices and risk reduction.
+                                </p>
+
+                                <h3><b>Mooring Audits</b></h3>
+
+                                <p>
+                                    Our mooring audits evaluate mooring arrangements, equipment condition, procedures, and crew competence. We help shipowners enhance mooring safety, reduce incidents, and comply with best industry practices.
+                                </p>
+
+                                <h3><b>MARPOL Investigation &amp; Environmental Compliance</b></h3>
+
+                                <p>
+                                    We provide support for MARPOL-related investigations and environmental compliance assessments. Our services include incident analysis, documentation review, corrective action development, and consultancy to ensure compliance with international environmental regulations.
+                                </p>
+
+                                <h3><b>Maintenance &amp; Repair</b></h3>
+
+                                <p>
+                                    We support shipowners with maintenance and repair services covering planned maintenance, damage repairs, dry-docking support, and technical troubleshooting. Acting as the shipowner's representative, we ensure repair works are executed efficiently, in compliance with class and flag requirements, while minimizing off-hire time and controlling costs.
                                 </p>
                             </div>
                         </div>
@@ -82,14 +121,15 @@ export default function SurveyAuditOwnerRepresentationPage() {
                     margin-bottom: 20px;
                     color: #4b5563;
                     line-height: 1.7;
+                    text-align: justify;
                 }
                 
                 .title-area h3 {
-                    margin-top: 0;
-                    margin-bottom: 14px;
-                    color: #0f172a;
-                    font-size: 26px;
-                    font-weight: 800;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    color: var(--theme-color, #0066cc);
+                    font-size: 20px;
+                    font-weight: 700;
                 }
                 
                 .title-area h3:first-of-type {
@@ -98,7 +138,7 @@ export default function SurveyAuditOwnerRepresentationPage() {
                 
                 .title-area ul {
                     margin: 15px 0 20px 0;
-                    padding-left: 0;
+                    padding-left: 20px;
                     list-style: none;
                 }
                 

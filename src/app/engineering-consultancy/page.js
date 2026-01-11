@@ -23,41 +23,82 @@ export default function EngineeringConsultancyPage() {
     return (
         <div style={{ overflow: 'hidden' }}>
             <HeaderFour />
-            <Breadcumb title="ENGINEERING & CONSULTANCY" bgImage="/main-assets/image/about-bg.jpg" />
+            <Breadcumb title="Engineering & Ship Operation Consultancy Services" bgImage="/main-assets/image/about-bg.jpg" />
             <div className="about-area-2 space-top overflow-hidden no-anim-bar">
                 <div className="container">
                     <div className="row gx-60 align-items-start">
                         <div className="col-xl-6">
                             <div className="title-area eng-left" style={{ paddingTop: '0' }}>
-                                <h3>Engineering Services</h3>
                                 <p>
-                                    Our expertise covers hydrostatics, stability, structural analysis, seakeeping, manoeuvring, and regulatory compliance. By applying proven engineering methodologies and modern computational tools, we support shipowners, operators, shipyards, and designers in achieving safe, efficient, and compliant vessel operations.
+                                    We provide engineering and ship operation consultancy services supporting shipowners and operators in safe, efficient, and environmentally compliant vessel operations. Our services are built on hands-on seagoing experience, shipyard expertise, and long-term involvement in technical management, safety systems, and regulatory compliance.
                                 </p>
+
+                                <h3><b>Safety &amp; Training</b></h3>
+
                                 <p>
-                                    Our engineering services are performed using recognized calculation methods, approved software tools, and applicable international standards, including SOLAS, MARPOL, the Intact and Damage Stability Codes, ICLL, and relevant Class Rules. We work closely with shipowners, operators, shipyards, and surveyors to ensure that all deliverables are suitable for Class and Flag approval.
+                                    Safety is at the core of sustainable ship operations. We deliver comprehensive maritime safety and training services focusing on practical implementation rather than theoretical instruction.
                                 </p>
+
                                 <p>
-                                    We offer our clients a comprehensive range of engineering services, including:
+                                    Our firefighting, LSA, and FFE training programs are designed to reflect real onboard conditions and operational scenarios. Trainings can be conducted at:
                                 </p>
-                                <ul className="eng-list">
-                                    <li>Inclining Experiment Calculations</li>
-                                    <li>Weight Estimation and Weight Distribution Analysis</li>
-                                    <li>Deadweight Increase Studies for Various Vessel Types (including Container Vessels, Dry Cargo Ships, Multi-Purpose Vessels (MPV), Bulk Carriers, Tankers, Passenger Ships, Offshore Support Vessels (OSV), etc.), performed in accordance with applicable IMO regulations, Flag State requirements, and Classification Society Rules.</li>
-                                    <li>Stability Calculations &amp; Stability Booklets (Intact, Damage, Bulk Cargo, Grain, Heavy Lift, Special Purpose Vessels, etc.)</li>
-                                    <li>Load Master Development for Ships</li>
-                                    <li>Seakeeping &amp; Manoeuvring Calculations</li>
-                                    <li>Dynamic Positioning (DP) Calculations</li>
-                                    <li>Freeboard &amp; Tonnage Calculations (ICLL 66/88 and ITC 69 compliance)</li>
-                                    <li>Model Tank Testing</li>
-                                    <li>Ballast Water Management Plan (BWMP) Preparation (in compliance with IMO Ballast Water Management Convention)</li>
-                                    <li>Hull Structure Calculations</li>
-                                    <li>3D FEM Hull Analysis</li>
-                                    <li>Hatch Cover Strength Analysis</li>
-                                    <li>Fuel Consumption and Energy Efficiency Analysis (supporting EEDI / EEXI / CII requirements)</li>
-                                    <li>Ballast Water Treatment System Modification &amp; Installation</li>
-                                    <li>3D Modelling and Rendering Visualization</li>
-                                    <li>Workshop Documentation &amp; Technical Drawings</li>
+
+                                <ul>
+                                    <li>Our Rotterdam-based training facilities</li>
+                                    <li>On board vessels, during operation or port stays</li>
+                                    <li>Clients' offices, upon request</li>
                                 </ul>
+
+                                <p>
+                                    Training content includes equipment operation, inspection, maintenance, emergency response, drills, and compliance with SOLAS, class, and flag state requirements. We support shipowners in strengthening onboard safety culture, improving crew competence, and maintaining regulatory readiness.
+                                </p>
+
+                                <h3><b>Ship Operation, Environmental &amp; GHG Consultancy</b></h3>
+
+                                <p>
+                                    We provide consultancy services covering ship operation, technical management support, safety management systems, and environmental compliance. A key focus area of our consultancy is marine environmental performance and GHG reduction.
+                                </p>
+
+                                <p>
+                                    We support shipowners with:
+                                </p>
+
+                                <ul>
+                                    <li>GHG and environmental compliance consultancy</li>
+                                    <li>Technical and operational measures for emission reduction</li>
+                                    <li>Design improvements to enhance energy efficiency</li>
+                                    <li>Retrofit projects including system upgrades and alternative solutions</li>
+                                    <li>Shipyard process management during environmental and energy-efficiency-related modifications</li>
+                                </ul>
+
+                                <p>
+                                    Our services combine engineering solutions with operational consultancy, ensuring that environmental compliance measures are technically feasible, cost-effective, and aligned with vessel trading profiles.
+                                </p>
+
+                                <h3><b>Sale &amp; Purchase (S&amp;P) Consultancy</b></h3>
+
+                                <p>
+                                    We provide independent and shipowner-focused Sale &amp; Purchase (S&amp;P) consultancy services, supporting clients throughout the entire transaction process.
+                                </p>
+
+                                <p>
+                                    Our S&amp;P services include:
+                                </p>
+
+                                <ul>
+                                    <li>Pre-purchase inspections and technical condition assessments</li>
+                                    <li>Evaluation of vessel compliance, operational risks, and lifecycle costs</li>
+                                    <li>Technical support during negotiations and contract finalization</li>
+                                    <li>Post-purchase technical planning, including retrofit and upgrade roadmaps</li>
+                                </ul>
+
+                                <p>
+                                    Our experience ensures that shipowners and investors make informed decisions based on technical integrity, operational suitability, and long-term asset value.
+                                </p>
+
+                                <p>
+                                    By integrating safety expertise, operational consultancy, environmental engineering, and shipyard process management, we deliver practical, implementation-driven solutions. We position ourselves as a trusted partner for shipowners seeking safe operations, regulatory compliance, environmental performance, and sustainable fleet development.
+                                </p>
                             </div>
                         </div>
                         <div className="col-xl-6">
@@ -90,11 +131,24 @@ export default function EngineeringConsultancyPage() {
                     margin-bottom: 20px;
                     color: #4b5563;
                     line-height: 1.7;
+                    text-align: justify;
+                }
+                
+                .title-area h3 {
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    color: var(--theme-color, #0066cc);
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                
+                .title-area h3:first-of-type {
+                    margin-top: 20px;
                 }
                 
                 .title-area ul {
                     margin: 15px 0 20px 0;
-                    padding-left: 0;
+                    padding-left: 20px;
                     list-style: none;
                 }
                 

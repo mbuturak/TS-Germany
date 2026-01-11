@@ -28,15 +28,19 @@ export default function MaintenanceRepairPage() {
                         <div className="col-xl-12">
                             <div className="title-area" style={{ paddingTop: '0' }}>
                                 <p>
-                                    We support shipowners with planned and corrective maintenance, dry-docking management, damage repairs, and technical troubleshooting. Our shipyard and seagoing background enables us to manage repair scopes efficiently, minimize off-hire time, and ensure compliance with class and flag requirements.
+                                    We provide comprehensive maintenance and repair services designed to ensure vessel reliability, operational continuity, and compliance with class and flag requirements. Our team, with extensive seagoing and shipyard experience, supports shipowners in all aspects of vessel upkeep, including planned maintenance, corrective repairs, dry-docking supervision, and technical troubleshooting.
                                 </p>
 
                                 <p>
-                                    As part of our maintenance and repair services, we also provide spare parts supply, including sourcing, technical verification, and timely delivery of critical components. This integrated approach allows shipowners to manage maintenance, repairs, and spare parts procurement through a single, reliable technical partner.
+                                    By acting as the shipowner's technical representative, we manage repair scopes efficiently, monitor quality control, ensure adherence to schedules, and minimize off-hire time. We coordinate with shipyards, suppliers, and classification societies to guarantee that all works meet regulatory and operational standards.
                                 </p>
 
                                 <p>
-                                    By combining seagoing experience, engineering expertise, shipyard know-how, safety specialization, and the strong operational foundation of Task-in Baltic Services, we deliver technically sound, implementation-driven solutions. We position ourselves as a long-term technical and safety partner for shipowners focused on reliable, compliant, and sustainable vessel operations.
+                                    In addition, we offer spare parts supply services to support uninterrupted vessel operation. Our services include sourcing, technical verification, and timely delivery of critical components. By integrating spare parts management with maintenance and repair planning, we provide shipowners with a single reliable partner to handle all technical and operational needs.
+                                </p>
+
+                                <p>
+                                    With this combined approach, shipowners benefit from optimized maintenance, reduced downtime, cost control, and increased asset longevity, ensuring vessels remain safe, efficient, and commercially competitive.
                                 </p>
                             </div>
                         </div>
@@ -48,6 +52,7 @@ export default function MaintenanceRepairPage() {
                     margin-bottom: 20px;
                     color: #4b5563;
                     line-height: 1.7;
+                    text-align: justify;
                 }
                 
                 .title-area h3 {

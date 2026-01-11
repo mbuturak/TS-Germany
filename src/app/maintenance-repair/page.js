@@ -21,7 +21,7 @@ export default function MaintenanceRepairPage() {
     return (
         <div style={{ overflow: 'hidden' }}>
             <HeaderFour />
-            <Breadcumb title="MAINTENANCE & REPAIR" bgImage="/main-assets/image/about-bg.jpg" />
+            <Breadcumb title="MAINTENANCE, REPAIR & SPARE PARTS SUPPLY" bgImage="/main-assets/image/about-bg.jpg" />
             <div className="about-area-2 space-top overflow-hidden no-anim-bar">
                 <div className="container">
                     <div className="row gx-60 align-items-start flex-row-reverse">

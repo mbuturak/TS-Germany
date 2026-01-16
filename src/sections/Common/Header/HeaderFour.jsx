@@ -11,7 +11,9 @@ const HeaderFour = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
     const [viewportWidth, setViewportWidth] = useState(0); // Track viewport width for responsive slogan
+    const [megaMenuTop, setMegaMenuTop] = useState(100); // Mega menu top position
     const sidebarRef = useRef(null);
+    const headerRef = useRef(null);
     const pathname = usePathname();
     
     // When header becomes sticky, center the logo vertically
@@ -41,6 +43,25 @@ const HeaderFour = () => {
         window.addEventListener('resize', updateWidth);
         return () => window.removeEventListener('resize', updateWidth);
     }, []);
+
+    // Calculate mega menu top position based on header height
+    useEffect(() => {
+        const updateMegaMenuTop = () => {
+            if (headerRef.current) {
+                const headerHeight = headerRef.current.offsetHeight;
+                setMegaMenuTop(headerHeight);
+                // Set CSS variable for mega menu top position
+                document.documentElement.style.setProperty('--mega-menu-top', `${headerHeight}px`);
+            }
+        };
+        updateMegaMenuTop();
+        window.addEventListener('resize', updateMegaMenuTop);
+        window.addEventListener('scroll', updateMegaMenuTop);
+        return () => {
+            window.removeEventListener('resize', updateMegaMenuTop);
+            window.removeEventListener('scroll', updateMegaMenuTop);
+        };
+    }, [isSticky]);
 
     // Determine slogan image size per breakpoints; keep aspect ratio of original 385x50
     const computeSloganWidth = () => {
@@ -83,7 +104,7 @@ const HeaderFour = () => {
     return (
         <div>
             <MultiPageMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-            <header className="nav-header header-layout2">
+            <header ref={headerRef} className="nav-header header-layout2">
                 <div className={`sticky-wrapper ${isSticky ? 'sticky' : ''}`} style={{ paddingTop: '0', paddingBottom: '0' }}>
                     {/* Main Menu Area */}
                     <div className="menu-area" style={{ position: 'relative', padding: '15px 0' }}>
@@ -123,19 +144,10 @@ const HeaderFour = () => {
                                                                     <div className="mega-menu-column">
                                                                         <h6 className="mega-menu-title"><Link href="/engineering-consultancy">ENGINEERING & SHIP OPERATION CONSULTANCY SERVICES</Link></h6>
                                                                         <ul>
-                                                                            <li><Link href="/services#remote-tanker">Remote Tanker Advisory Services</Link></li>
-                                                                            <li><Link href="/services#crude-oil">Crude Oil & Product Tankers</Link></li>
-                                                                            <li><Link href="/services#chemical">Chemical Tankers</Link></li>
-                                                                            <li><Link href="/services#cement">Cement in Bulk</Link></li>
-                                                                            <li><Link href="/services#coal">Coal in Bulk</Link></li>
-                                                                            <li><Link href="/services#minerals">Minerals, Ores and Concentrates</Link></li>
-                                                                            <li><Link href="/services#fertilizers">Fertilizers (All Grades)</Link></li>
-                                                                            <li><Link href="/services#liquefaction">Liquefaction of Solid Bulk Cargoes</Link></li>
-                                                                            <li><Link href="/services#grain">Grain Cargo</Link></li>
-                                                                            <li><Link href="/services#steel">Steel Cargo</Link></li>
-                                                                            <li><Link href="/services#containers">Containers</Link></li>
-                                                                            <li><Link href="/services#roro">RORO and PCTC</Link></li>
-                                                                            <li><Link href="/services#heavy-lift">Heavy Lift - Project Cargo</Link></li>
+                                                                            <li><Link href="/services#engineering-solutions">Engineering Solutions</Link></li>
+                                                                            <li><Link href="/services#safety-training">Safety & Training</Link></li>
+                                                                            <li><Link href="/services#ship-operation">Ship Operation, Environmental and Optimization Consultancy</Link></li>
+                                                                            <li><Link href="/services#sale-purchase">Sale & Purchase Services</Link></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -186,8 +198,17 @@ const HeaderFour = () => {
                 </div>
             </header>
             <style jsx global>{`
+                /* Parent element'lerin overflow'unu düzelt */
+                .menu-area,
+                .menu-area .container,
+                .menu-area .row,
+                .menu-area .col-auto {
+                    overflow: visible !important;
+                }
+
                 /* Mega Menu Container - Kompakt ve Okunaklı */
                 .main-menu ul.sub-menu.mega-menu {
+                    position: fixed !important;
                     width: auto !important;
                     min-width: 1000px !important;
                     max-width: 1200px !important;
@@ -204,6 +225,15 @@ const HeaderFour = () => {
                     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
                     margin-top: 0 !important;
                     z-index: 9999 !important;
+                }
+
+                /* Mega menü için top pozisyonunu hesapla */
+                .main-menu ul li.menu-item-has-children:hover > ul.sub-menu.mega-menu {
+                    top: var(--mega-menu-top, 100px) !important;
+                }
+
+                .main-menu ul.sub-menu.mega-menu {
+                    top: var(--mega-menu-top, 100px) !important;
                 }
 
                 .main-menu ul li:hover > ul.sub-menu.mega-menu {

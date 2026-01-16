@@ -16,293 +16,32 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Link from "next/link";
-import Slider from "react-slick";
+import Image from "next/image";
 
 export default function ServicesPage() {
     const services = [
-        // MARINE SURVEY alt başlıkları
         {
-            title: "Condition Surveys",
-            href: "#",
+            title: "ENGINEERING & SHIP OPERATION CONSULTANCY SERVICES",
+            href: "/engineering-consultancy",
+            icon: "ri-team-line",
+        },
+        {
+            title: "SURVEY AUDIT & OWNER REPRESENTATION",
+            href: "/survey-audit-owner-representation",
             icon: "ri-file-search-line",
         },
         {
-            title: "Pre-Purchase Inspection",
-            href: "#",
-            icon: "ri-eye-line",
+            title: "MAINTENANCE, REPAIR & SPARE PARTS SUPPLY",
+            href: "/maintenance-repair",
+            icon: "ri-tools-line",
         },
         {
-            title: "Trip & Tow Survey",
-            href: "#",
-            icon: "ri-globe-line",
-        },
-        {
-            title: "On-Hire/Off-Hire Survey",
-            href: "#",
-            icon: "ri-calendar-check-line",
-        },
-        {
-            title: "Bunker Quantity Survey",
-            href: "#",
-            icon: "ri-gas-station-line",
-        },
-        {
-            title: "Draft Survey",
-            href: "#",
-            icon: "ri-ruler-line",
-        },
-        {
-            title: "Collision and Grounding",
-            href: "#",
-            icon: "ri-alert-line",
-        },
-        // COMPLIANCE AUDITS alt başlıkları
-        {
-            title: "Marine Audits",
-            href: "#",
-            icon: "ri-file-list-3-line",
-        },
-        {
-            title: "Navigation Audits",
-            href: "#",
-            icon: "ri-compass-3-line",
-        },
-        {
-            title: "Mooring Audits",
-            href: "#",
-            icon: "ri-anchor-line",
-        },
-        {
-            title: "MARPOL Investigation & Environmental Compliance",
-            href: "#",
-            icon: "ri-leaf-line",
-        },
-        // LIQUID/GAS CARGO EXPERTS alt başlıkları
-        {
-            title: "Crude Oil & Product Tankers",
-            href: "#",
-            icon: "ri-oil-line",
-        },
-        {
-            title: "Chemical Tankers",
-            href: "#",
-            icon: "ri-flask-line",
-        },
-        {
-            title: "Gas Tankers - LNG & LPG",
-            href: "#",
-            icon: "ri-fire-line",
-        },
-        {
-            title: "Cargo Contamination and Claims Investigation",
-            href: "#",
-            icon: "ri-file-warning-line",
-        },
-        {
-            title: "Remote Tanker Advisory Services",
-            href: "#",
-            icon: "ri-wifi-line",
-        },
-        // CARGO EXPERTISE alt başlıkları
-        {
-            title: "Cement in Bulk",
-            href: "#",
-            icon: "ri-building-line",
-        },
-        {
-            title: "Coal in Bulk",
-            href: "#",
-            icon: "ri-stack-line",
-        },
-        {
-            title: "Minerals, Ores and Concentrates",
-            href: "#",
-            icon: "ri-flask-line",
-        },
-        {
-            title: "Fertilizers (All Grades)",
-            href: "#",
-            icon: "ri-plant-line",
-        },
-        {
-            title: "Liquefaction of Solid Bulk Cargoes",
-            href: "#",
-            icon: "ri-water-percent-line",
-        },
-        {
-            title: "Grain Cargo",
-            href: "#",
-            icon: "ri-seedling-line",
-        },
-        {
-            title: "Steel Cargo",
-            href: "#",
-            icon: "ri-hammer-line",
-        },
-        {
-            title: "Containers",
-            href: "#",
-            icon: "ri-safe-line",
-        },
-        {
-            title: "RORO and PCTC",
-            href: "#",
-            icon: "ri-truck-line",
-        },
-        {
-            title: "Heavy Lift - Project Cargo",
-            href: "#",
-            icon: "ri-weight-fill",
+            title: "Services",
+            href: "https://task-inservices.com",
+            icon: "ri-service-line",
         },
     ];
 
-    // Servisleri 8'li gruplara ayır (4 kolon x 2 sıra)
-    const servicesPerSlide = 8;
-    const serviceSlides = [];
-    for (let i = 0; i < services.length; i += servicesPerSlide) {
-        serviceSlides.push(services.slice(i, i + servicesPerSlide));
-    }
-
-    function SampleNextArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-            <button
-                type="button"
-                className={`${className} services-next-arrow`}
-                style={{
-                    ...style,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: 56,
-                    height: 56,
-                    borderRadius: "50%",
-                    background: "#ffffff",
-                    color: "var(--theme-color, #0066cc)",
-                    position: "absolute",
-                    right: -28,
-                    top: "50%",
-                    marginTop: 0,
-                    transform: "translateY(-50%)",
-                    boxShadow: "0 4px 20px rgba(0, 102, 204, 0.2)",
-                    zIndex: 10,
-                    border: "2px solid #e5e7eb",
-                    cursor: "pointer",
-                    transition: "all 0.3s ease",
-                    outline: "none",
-                }}
-                onClick={onClick}
-                onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "var(--theme-color, #0066cc)";
-                    e.currentTarget.style.color = "#ffffff";
-                    e.currentTarget.style.borderColor = "var(--theme-color, #0066cc)";
-                    e.currentTarget.style.boxShadow = "0 6px 24px rgba(0, 102, 204, 0.35)";
-                    e.currentTarget.style.transform = "translateY(-50%) scale(1.1)";
-                    e.currentTarget.style.top = "50%";
-                    e.currentTarget.style.marginTop = "0";
-                }}
-                onMouseLeave={(e) => {
-                    e.currentTarget.style.background = "#ffffff";
-                    e.currentTarget.style.color = "var(--theme-color, #0066cc)";
-                    e.currentTarget.style.borderColor = "#e5e7eb";
-                    e.currentTarget.style.boxShadow = "0 4px 20px rgba(0, 102, 204, 0.2)";
-                    e.currentTarget.style.transform = "translateY(-50%) scale(1)";
-                    e.currentTarget.style.top = "50%";
-                    e.currentTarget.style.marginTop = "0";
-                }}
-            >
-            </button>
-        );
-    }
-
-    function SamplePrevArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-            <button
-                type="button"
-                className={`${className} services-prev-arrow`}
-                style={{
-                    ...style,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: 56,
-                    height: 56,
-                    borderRadius: "50%",
-                    background: "#ffffff",
-                    color: "var(--theme-color, #0066cc)",
-                    position: "absolute",
-                    left: -28,
-                    top: "50%",
-                    marginTop: 0,
-                    transform: "translateY(-50%)",
-                    boxShadow: "0 4px 20px rgba(0, 102, 204, 0.2)",
-                    zIndex: 10,
-                    border: "2px solid #e5e7eb",
-                    cursor: "pointer",
-                    transition: "all 0.3s ease",
-                    outline: "none",
-                }}
-                onClick={onClick}
-                onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "var(--theme-color, #0066cc)";
-                    e.currentTarget.style.color = "#ffffff";
-                    e.currentTarget.style.borderColor = "var(--theme-color, #0066cc)";
-                    e.currentTarget.style.boxShadow = "0 6px 24px rgba(0, 102, 204, 0.35)";
-                    e.currentTarget.style.transform = "translateY(-50%) scale(1.1)";
-                    e.currentTarget.style.top = "50%";
-                    e.currentTarget.style.marginTop = "0";
-                }}
-                onMouseLeave={(e) => {
-                    e.currentTarget.style.background = "#ffffff";
-                    e.currentTarget.style.color = "var(--theme-color, #0066cc)";
-                    e.currentTarget.style.borderColor = "#e5e7eb";
-                    e.currentTarget.style.boxShadow = "0 4px 20px rgba(0, 102, 204, 0.2)";
-                    e.currentTarget.style.transform = "translateY(-50%) scale(1)";
-                    e.currentTarget.style.top = "50%";
-                    e.currentTarget.style.marginTop = "0";
-                }}
-            >
-            </button>
-        );
-    }
-
-    const sliderSettings = {
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 4000,
-        dots: true,
-        arrows: true,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
-        pauseOnHover: true,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    };
 
     return (
         <>
@@ -321,178 +60,44 @@ export default function ServicesPage() {
                     </div>
                 </div>
                 <div className="container" style={{ marginTop: '10px', marginBottom: '80px' }}>
-                    <div className="services-slider-wrapper" style={{ position: "relative" }}>
-                        <Slider {...sliderSettings} className="services-carousel">
-                            {serviceSlides.map((slideServices, slideIndex) => (
-                                <div key={slideIndex} className="service-slide">
-                                    <div className="row g-4">
-                                        {slideServices.map((service, index) => (
-                                            <div key={service.title} className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                                                <Link href={service.href} className="service-icon-card">
-                                                    <div className="service-icon-wrapper">
-                                                        <i className={service.icon}></i>
-                                                    </div>
-                                                    <h4 className="service-icon-title">{service.title}</h4>
-                                                </Link>
-                                            </div>
-                                        ))}
-                                    </div>
+                    <div className="row g-4 justify-content-center">
+                        {services.map((service) => {
+                            const isExternalLink = service.href.startsWith('http');
+                            const LinkComponent = isExternalLink ? 'a' : Link;
+                            const isServicesCard = service.title === 'Services';
+                            const cardClassName = isServicesCard ? 'service-icon-card service-logo-card' : 'service-icon-card';
+                            
+                            const linkProps = isExternalLink 
+                                ? { href: service.href, target: '_blank', rel: 'noopener noreferrer', className: cardClassName }
+                                : { href: service.href, className: cardClassName };
+                            
+                            return (
+                                <div key={service.title} className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                                    <LinkComponent {...linkProps}>
+                                        <div className={`service-icon-wrapper ${isServicesCard ? 'service-logo-wrapper' : ''}`}>
+                                            {isServicesCard ? (
+                                                <Image 
+                                                    src="/main-assets/image/taskin-services-logo.svg" 
+                                                    alt="Task-in Services Logo" 
+                                                    width={200} 
+                                                    height={200}
+                                                    style={{ objectFit: 'contain' }}
+                                                />
+                                            ) : (
+                                                <i className={service.icon}></i>
+                                            )}
+                                        </div>
+                                        {!isServicesCard && <h4 className="service-icon-title">{service.title}</h4>}
+                                    </LinkComponent>
                                 </div>
-                            ))}
-                        </Slider>
-                            </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
             <FooterThree />
             <Scroll />
             <style jsx global>{`
-                .services-slider-wrapper {
-                    padding: 0 80px;
-                    position: relative;
-                }
-
-                .services-slider-wrapper .slick-list {
-                    position: relative;
-                }
-
-                .services-slider-wrapper .slick-track {
-                    display: flex;
-                    align-items: stretch;
-                }
-
-                /* Slick'in default arrow'larını gizle */
-                .services-carousel .slick-arrow {
-                    display: none !important;
-                }
-                
-                .services-carousel .services-next-arrow,
-                .services-carousel .services-prev-arrow {
-                    opacity: 1 !important;
-                    top: 50% !important;
-                    transform: translateY(-50%) !important;
-                    margin-top: 0 !important;
-                    display: flex !important;
-                }
-                
-                /* CSS ile tek ok çiz */
-                .services-carousel .services-next-arrow::before {
-                    content: '';
-                    display: block;
-                    width: 10px;
-                    height: 10px;
-                    border-right: 2px solid currentColor;
-                    border-top: 2px solid currentColor;
-                    transform: rotate(45deg);
-                }
-                
-                .services-carousel .services-prev-arrow::before {
-                    content: '';
-                    display: block;
-                    width: 10px;
-                    height: 10px;
-                    border-left: 2px solid currentColor;
-                    border-bottom: 2px solid currentColor;
-                    transform: rotate(45deg);
-                }
-                
-                /* Tüm içeriği gizle */
-                .services-carousel .services-next-arrow > *,
-                .services-carousel .services-prev-arrow > * {
-                    display: none !important;
-                }
-
-                .services-carousel .services-next-arrow:hover,
-                .services-carousel .services-prev-arrow:hover {
-                    transform: translateY(-50%) scale(1.1) !important;
-                }
-
-                .services-carousel .services-next-arrow.slick-disabled,
-                .services-carousel .services-prev-arrow.slick-disabled {
-                    opacity: 0.4 !important;
-                    cursor: not-allowed;
-                }
-
-                @media (max-width: 1200px) {
-                    .services-slider-wrapper {
-                        padding: 0 70px;
-                    }
-                    
-                    .services-carousel .services-next-arrow {
-                        right: -20px;
-                    }
-                    
-                    .services-carousel .services-prev-arrow {
-                        left: -20px;
-                    }
-                }
-
-                @media (max-width: 768px) {
-                    .services-slider-wrapper {
-                        padding: 0 60px;
-                    }
-                    
-                    .services-carousel .services-next-arrow,
-                    .services-carousel .services-prev-arrow {
-                        width: 48px;
-                        height: 48px;
-                    }
-                    
-                    .services-carousel .services-next-arrow {
-                        right: -15px;
-                    }
-                    
-                    .services-carousel .services-prev-arrow {
-                        left: -15px;
-                    }
-                }
-
-                @media (max-width: 576px) {
-                    .services-slider-wrapper {
-                        padding: 0 50px;
-                    }
-                    
-                    .services-carousel .services-next-arrow,
-                    .services-carousel .services-prev-arrow {
-                        width: 44px;
-                        height: 44px;
-                    }
-                    
-                    .services-carousel .services-next-arrow i,
-                    .services-carousel .services-prev-arrow i {
-                        font-size: 18px;
-                    }
-                }
-
-                .services-carousel .slick-dots {
-                    bottom: -50px;
-                }
-
-                .services-carousel .slick-dots li button:before {
-                    font-size: 12px;
-                    color: var(--theme-color, #0066cc);
-                    opacity: 0.3;
-                }
-
-                .services-carousel .slick-dots li.slick-active button:before {
-                    opacity: 1;
-                    color: var(--theme-color, #0066cc);
-                }
-
-                .service-slide {
-                    padding: 0 10px;
-                }
-
-                @media (max-width: 768px) {
-                    .services-slider-wrapper {
-                        padding: 0 50px;
-                    }
-                }
-
-                @media (max-width: 576px) {
-                    .services-slider-wrapper {
-                        padding: 0 40px;
-                    }
-                }
 
                 .service-icon-card {
                     display: flex;
@@ -573,6 +178,15 @@ export default function ServicesPage() {
                     z-index: 1;
                 }
 
+                .service-icon-wrapper img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    position: relative;
+                    z-index: 1;
+                }
+
                 .service-icon-card:hover .service-icon-wrapper {
                     transform: scale(1.1) rotate(5deg);
                     background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
@@ -581,6 +195,61 @@ export default function ServicesPage() {
                 .service-icon-card:hover .service-icon-wrapper i {
                     transform: scale(1.15);
                     color: #0052a3;
+                }
+
+                .service-icon-card:hover .service-icon-wrapper img {
+                    transform: scale(1.15);
+                }
+
+                /* Services logo için özel stiller */
+                .service-logo-wrapper {
+                    background: transparent !important;
+                    width: 200px !important;
+                    height: 200px !important;
+                }
+
+                .service-logo-wrapper::after {
+                    display: none !important;
+                }
+
+                /* Services logo için hover efektlerini kaldır */
+                .service-logo-card:hover .service-logo-wrapper {
+                    background: transparent !important;
+                    transform: none !important;
+                    rotate: 0deg !important;
+                }
+
+                .service-logo-card:hover .service-logo-wrapper img {
+                    transform: none !important;
+                }
+
+                .service-logo-wrapper img {
+                    width: 200px !important;
+                    height: 200px !important;
+                }
+
+                @media (max-width: 768px) {
+                    .service-logo-wrapper {
+                        width: 160px !important;
+                        height: 160px !important;
+                    }
+
+                    .service-logo-wrapper img {
+                        width: 160px !important;
+                        height: 160px !important;
+                    }
+                }
+
+                @media (max-width: 576px) {
+                    .service-logo-wrapper {
+                        width: 140px !important;
+                        height: 140px !important;
+                    }
+
+                    .service-logo-wrapper img {
+                        width: 140px !important;
+                        height: 140px !important;
+                    }
                 }
 
                 .service-icon-title {

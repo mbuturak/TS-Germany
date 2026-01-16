@@ -33,7 +33,7 @@ export default function EngineeringConsultancyPage() {
                                     We provide engineering and ship operation consultancy services supporting shipowners and operators in safe, efficient, and environmentally compliant vessel operations. Our services are built on hands-on seagoing experience, shipyard expertise, and long-term involvement in technical management, safety systems, and regulatory compliance.
                                 </p>
 
-                                <h3><b>Safety &amp; Training</b></h3>
+                                <h3 id="safety-training"><b>Safety &amp; Training</b></h3>
 
                                 <p>
                                     Safety is at the core of sustainable ship operations. We deliver comprehensive maritime safety and training services focusing on practical implementation rather than theoretical instruction.
@@ -53,7 +53,7 @@ export default function EngineeringConsultancyPage() {
                                     Training content includes equipment operation, inspection, maintenance, emergency response, drills, and compliance with SOLAS, class, and flag state requirements. We support shipowners in strengthening onboard safety culture, improving crew competence, and maintaining regulatory readiness.
                                 </p>
 
-                                <h3><b>Ship Operation, Environmental &amp; GHG Consultancy</b></h3>
+                                <h3 id="ship-operation"><b>Ship Operation, Environmental &amp; GHG Consultancy</b></h3>
 
                                 <p>
                                     We provide consultancy services covering ship operation, technical management support, safety management systems, and environmental compliance. A key focus area of our consultancy is marine environmental performance and GHG reduction.

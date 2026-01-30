@@ -144,10 +144,10 @@ const HeaderFour = () => {
                                                                     <div className="mega-menu-column">
                                                                         <h6 className="mega-menu-title"><Link href="/engineering-consultancy">ENGINEERING & SHIP OPERATION CONSULTANCY SERVICES</Link></h6>
                                                                         <ul>
-                                                                            <li><Link href="/services#engineering-solutions">Engineering Solutions</Link></li>
-                                                                            <li><Link href="/services#safety-training">Safety & Training</Link></li>
-                                                                            <li><Link href="/services#ship-operation">Ship Operation, Environmental and Optimization Consultancy</Link></li>
-                                                                            <li><Link href="/services#sale-purchase">Sale & Purchase Services</Link></li>
+                                                                            <li><Link href="/engineering-consultancy/engineering-solutions">Engineering Solutions</Link></li>
+                                                                            <li><Link href="/engineering-consultancy/safety-training">Safety & Training</Link></li>
+                                                                            <li><Link href="/engineering-consultancy/ship-operation">Ship Operation, Environmental and Optimization Consultancy</Link></li>
+                                                                            <li><Link href="/engineering-consultancy/sale-purchase">Sale & Purchase Services</Link></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -192,6 +192,11 @@ const HeaderFour = () => {
                                         </button>
                                     </div>
                                 </div>
+                                <div className="col-auto d-none d-lg-block header-taskin-services-logo">
+                                    <a href="https://task-inservices.com" target="_blank" rel="noopener noreferrer" className="taskin-services-logo-link" title="Task-in Services">
+                                        <Image src="/main-assets/image/taskin-services-logo.svg" alt="Task-in Services" width={280} height={88} />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -204,6 +209,25 @@ const HeaderFour = () => {
                 .menu-area .row,
                 .menu-area .col-auto {
                     overflow: visible !important;
+                }
+
+                /* Task-in Services logo - sağ üst */
+                .header-taskin-services-logo {
+                    display: flex;
+                    align-items: center;
+                }
+                .taskin-services-logo-link {
+                    display: inline-flex;
+                    align-items: center;
+                    transition: opacity 0.25s ease;
+                }
+                .taskin-services-logo-link:hover {
+                    opacity: 0.85;
+                }
+                .header-taskin-services-logo img {
+                    height: 88px;
+                    width: auto;
+                    object-fit: contain;
                 }
 
                 /* Mega Menu Container - Kompakt ve Okunaklı */

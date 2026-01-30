@@ -55,7 +55,7 @@ export default function ShipOperationPage() {
                         <div className="col-xl-6">
                             <div className="about-thumb2 eng-right" style={{ paddingTop: '0' }}>
                                 <div className="about-img-1">
-                                    <Image src="/main-assets/image/about-us-3.png" alt="Ship Operation, Environmental & GHG Consultancy" width={1200} height={800} priority />
+                                    <Image src="/main-assets/image/surveyaudit1.jpeg" alt="Ship Operation, Environmental & GHG Consultancy" width={1200} height={800} priority />
                                 </div>
                             </div>
                         </div>

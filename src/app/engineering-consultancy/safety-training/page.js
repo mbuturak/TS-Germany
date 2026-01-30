@@ -53,7 +53,7 @@ export default function SafetyTrainingPage() {
                         <div className="col-xl-6">
                             <div className="about-thumb2 eng-right" style={{ paddingTop: '0' }}>
                                 <div className="about-img-1">
-                                    <Image src="/main-assets/image/about-us-2.png" alt="Safety & Training" width={1200} height={800} priority />
+                                    <Image src="/main-assets/image/surveyaudit2.jpeg" alt="Safety & Training" width={1200} height={800} priority />
                                 </div>
                             </div>
                         </div>

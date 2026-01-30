@@ -23,11 +23,13 @@ const FooterThree = () => {
                                 <div className="menu-all-pages-container grid-style" style={{ marginTop: '75px' }}>
                                     <ul className="menu">
                                         <li><a href="/about">ABOUT</a></li>
-                                        <li><a href="/services">SERVICES</a></li>
+                                        <li><a href="/locations">LOCATIONS</a></li>
+                                        <li><a href="/contact">CONTACT</a></li>
                                     </ul>
                                     <ul className="menu">
-                                       <li><a href="/locations">LOCATIONS</a></li>
-                                        <li><a href="/contact">CONTACT</a></li>
+                                        <li><a href="/engineering-consultancy">ENGINEERING & SHIP OPERATION CONSULTANCY SERVICES</a></li>
+                                        <li><a href="/survey-audit-owner-representation">SURVEY AUDIT & OWNER REPRESENTATION</a></li>
+                                        <li><a href="/maintenance-repair">MAINTENANCE, REPAIR & SPARE PARTS SUPPLY</a></li>
                                     </ul>
                                 </div>
                             </div>

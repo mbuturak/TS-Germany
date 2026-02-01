@@ -54,7 +54,7 @@ export default function SalePurchasePage() {
                         <div className="col-xl-6">
                             <div className="about-thumb2 eng-right" style={{ paddingTop: '0' }}>
                                 <div className="about-img-1">
-                                    <Image src="/main-assets/image/about-us-4.png" alt="Sale & Purchase Services" width={1200} height={800} priority />
+                                    <Image src="/main-assets/image/sales-and-purchase.jpeg" alt="Sale & Purchase Services" width={1200} height={800} priority />
                                 </div>
                             </div>
                         </div>

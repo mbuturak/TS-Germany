@@ -144,6 +144,11 @@ const MultiPageMobileMenu = ({ isMenuOpen, setIsMenuOpen }) => {
                                         <div className="mobile-mega-menu-column">
                                             <h6 className="mobile-mega-menu-title"><Link href="/survey-audit-owner-representation" onClick={() => handleNavigate("/survey-audit-owner-representation")}>SURVEY AUDIT & OWNER REPRESENTATION</Link></h6>
                                             <ul>
+                                                <li><Link href="/survey-audit-owner-representation/rightship-pre-inspection" onClick={() => handleNavigate("/survey-audit-owner-representation/rightship-pre-inspection")}>RightShip Pre-Inspection Readiness</Link></li>
+                                                <li><Link href="/survey-audit-owner-representation/pre-vetting-inspection" onClick={() => handleNavigate("/survey-audit-owner-representation/pre-vetting-inspection")}>Pre-Vetting Inspection (General)</Link></li>
+                                                <li><Link href="/survey-audit-owner-representation/sire-preparation" onClick={() => handleNavigate("/survey-audit-owner-representation/sire-preparation")}>SIRE Preparation (Oil Tankers)</Link></li>
+                                                <li><Link href="/survey-audit-owner-representation/cdi-preparation" onClick={() => handleNavigate("/survey-audit-owner-representation/cdi-preparation")}>CDI Preparation (Chemical Tankers)</Link></li>
+                                                <li><Link href="/survey-audit-owner-representation/ovid-preparation" onClick={() => handleNavigate("/survey-audit-owner-representation/ovid-preparation")}>OVID Preparation (Offshore Vessels)</Link></li>
                                                 <li><Link href="/services#condition-surveys" onClick={() => handleNavigate("/services#condition-surveys")}>Condition Surveys</Link></li>
                                                 <li><Link href="/services#pre-purchase" onClick={() => handleNavigate("/services#pre-purchase")}>Pre-Purchase Inspection</Link></li>
                                                 <li><Link href="/services#trip-tow" onClick={() => handleNavigate("/services#trip-tow")}>Trip & Tow Survey</Link></li>

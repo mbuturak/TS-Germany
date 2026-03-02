@@ -3,23 +3,24 @@ import { useState } from 'react';
 
 // Office locations for dropdown
 const officeLocations = [
+  
   {
     id: 1,
-    name: "Task-in Services (Headquarters)",
-    email: "info@taskinservices.com",
-    location: "Netherlands"
-  },
-  {
-    id: 2,
-    name: "Task-in Baltic Services Oy",
+    name: "Task-in Marine",
     email: "baltic@taskinservices.com",
     location: "Finland"
   },
   {
-    id: 3,
-    name: "Task-in Germany",
+    id: 2,
+    name: "Task-in Marine",
     email: "germany@taskinservices.com",
     location: "Germany"
+  },
+  {
+    id: 3,
+    name: "Task-in Marine",
+    email: "info@taskinservices.com",
+    location: "Netherlands"
   },
 ];
 

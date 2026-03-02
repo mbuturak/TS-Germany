@@ -16,7 +16,7 @@ const About = () => {
                     <div className="col-xl-6">
                         <div className="title-area mb-25">
                             <h3 className="sec-title">Marine Engineering, Survey & Advisory Services</h3>
-                            <p className="sec-text">Our engineering company committed to delivering reliable, accurate, and innovative solutions to the maritime and offshore industries. With a strong technical foundation and a client-focused approach, we support shipowners, operators, and shipyards through every stage of a vessel’s lifecycle. Our work is based on internationally recognized standards and class society requirements, delivering precise analytical solutions for vessel design, modification, and operational performance.</p>
+                            <p className="sec-text">Our survey, audit and engineering company committed to delivering reliable, accurate, and innovative solutions to the maritime and offshore industries. With a strong technical foundation and a client-focused approach, we support shipowners, operators, and shipyards through every stage of a vessel’s lifecycle. Our work is based on internationally recognized standards and class society requirements, delivering precise analytical solutions for vessel design, modification, and operational performance.</p>
                         </div>
                         <div className="about-grid-wrap">
                             <div className="icon">

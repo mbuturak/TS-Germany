@@ -24,7 +24,7 @@ export default function AboutPage() {
     return (
         <div style={{ overflow: 'hidden' }}>
             <HeaderFour />
-            <Breadcumb title="ABOUT US" bgImage="/main-assets/image/about-bg.jpg" />
+            <Breadcumb title="ABOUT US" bgImage="/main-assets/image/kanal.png" />
             <div className="about-area-2 space-top overflow-hidden no-anim-bar">
                 <div className="container">
                     <div className="row gx-60 align-items-start flex-row-reverse">

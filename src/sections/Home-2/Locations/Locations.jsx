@@ -255,8 +255,8 @@ const Locations = () => {
                 )
               }              
               <p className="sec-text" style={{ lineHeight: '1.5', textAlign: 'center' }}>
-              Task-in Marine is a globally operating marine safety service provider headquartered in the Netherlands, with three 
-              strategically located branches. We extend our services across 60 ports in ARA, Europe, Scandinavia and the Baltics, providing fast, regulation-compliant support wherever needed.
+              Task-in Marine is a global marine surveying, engineering design, and retrofit specialist, operating through three strategically located offices.
+              With coverage across 60+ ports in ARA, Europe, Scandinavia, and the Baltics, we execute inspections, design packages, and onboard retrofit support efficiently and in full compliance with applicable regulations and class requirements.
               </p>
             </div>
           </div>

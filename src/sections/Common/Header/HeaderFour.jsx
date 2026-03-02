@@ -131,7 +131,6 @@ const HeaderFour = () => {
                                                 <Link href="#">COMPANY</Link>
                                                 <ul className="sub-menu">
                                                     <li><Link href="/about">About Us</Link></li>
-                                                    <li><Link href="/team">Our Team</Link></li>
                                                 </ul>
                                             </li>
                                             <li className="menu-item-has-children">
@@ -155,6 +154,11 @@ const HeaderFour = () => {
                                                                     <div className="mega-menu-column">
                                                                         <h6 className="mega-menu-title"><Link href="/survey-audit-owner-representation">SURVEY AUDIT & OWNER REPRESENTATION</Link></h6>
                                                                         <ul>
+                                                                            <li><Link href="/survey-audit-owner-representation/rightship-pre-inspection">RightShip Pre-Inspection Readiness</Link></li>
+                                                                            <li><Link href="/survey-audit-owner-representation/pre-vetting-inspection">Pre-Vetting Inspection (General)</Link></li>
+                                                                            <li><Link href="/survey-audit-owner-representation/sire-preparation">SIRE Preparation (Oil Tankers)</Link></li>
+                                                                            <li><Link href="/survey-audit-owner-representation/cdi-preparation">CDI Preparation (Chemical Tankers)</Link></li>
+                                                                            <li><Link href="/survey-audit-owner-representation/ovid-preparation">OVID Preparation (Offshore Vessels)</Link></li>
                                                                             <li><Link href="/services#condition-surveys">Condition Surveys</Link></li>
                                                                             <li><Link href="/services#pre-purchase">Pre-Purchase Inspection</Link></li>
                                                                             <li><Link href="/services#trip-tow">Trip & Tow Survey</Link></li>

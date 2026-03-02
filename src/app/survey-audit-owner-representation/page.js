@@ -18,12 +18,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SurveyAuditOwnerRepresentationPage() {
     return (
         <div style={{ overflow: 'hidden' }}>
             <HeaderFour />
-            <Breadcumb title="SURVEY AUDIT & OWNER REPRESENTATION" bgImage="/main-assets/image/about-bg.jpg" />
+            <Breadcumb title="SURVEY AUDIT & OWNER REPRESENTATION" bgImage="/main-assets/image/services/survey-4.jpeg" />
             <div className="about-area-2 space-top overflow-hidden no-anim-bar">
                 <div className="container">
                     <div className="row gx-60 align-items-start">
@@ -31,6 +32,61 @@ export default function SurveyAuditOwnerRepresentationPage() {
                             <div className="title-area survey-left" style={{ paddingTop: '0' }}>
                                 <p>
                                     We provide independent survey, audit, and shipowner representation services designed to protect shipowners' technical and commercial interests. Our experienced surveyors and auditors operate on behalf of owners, managers, and charterers, delivering accurate assessments, regulatory compliance, and practical recommendations based on real operational conditions.
+                                </p>
+
+                                <h3><b>RightShip Pre-Inspection Readiness</b></h3>
+
+                                <p>
+                                    We prepare your vessel to achieve and maintain a 4–5 RightShip rating through onboard attendance, mock inspections, and structured gap closure. Be inspection-ready, be charter-ready.
+                                </p>
+                                <p>
+                                    <Link href="/survey-audit-owner-representation/rightship-pre-inspection" className="btn btn3">
+                                        Learn more →
+                                    </Link>
+                                </p>
+
+                                <h3><b>Pre-Vetting Inspection (General)</b></h3>
+
+                                <p>
+                                    Comprehensive onboard readiness assessment tailored to upcoming third-party inspections.
+                                </p>
+                                <p>
+                                    <Link href="/survey-audit-owner-representation/pre-vetting-inspection" className="btn btn3">
+                                        Learn more →
+                                    </Link>
+                                </p>
+
+                                <h3><b>Oil Companies International Marine Forum SIRE Preparation (Oil Tankers)</b></h3>
+
+                                <p>
+                                    Preparation for inspections under the Ship Inspection Report Programme (SIRE) for crude, product, and LNG tankers.
+                                </p>
+                                <p>
+                                    <Link href="/survey-audit-owner-representation/sire-preparation" className="btn btn3">
+                                        Learn more →
+                                    </Link>
+                                </p>
+
+                                <h3><b>Chemical Distribution Institute CDI Preparation (Chemical Tankers)</b></h3>
+
+                                <p>
+                                    Assessment and preparation for CDI inspections applicable to chemical and parcel tankers.
+                                </p>
+                                <p>
+                                    <Link href="/survey-audit-owner-representation/cdi-preparation" className="btn btn3">
+                                        Learn more →
+                                    </Link>
+                                </p>
+
+                                <h3><b>Offshore Vessel Inspection Database OVID Preparation (Offshore Vessels)</b></h3>
+
+                                <p>
+                                    Inspection readiness support for offshore support vessels operating under OVID requirements.
+                                </p>
+                                <p>
+                                    <Link href="/survey-audit-owner-representation/ovid-preparation" className="btn btn3">
+                                        Learn more →
+                                    </Link>
                                 </p>
 
                                 <h3><b>Condition Surveys</b></h3>

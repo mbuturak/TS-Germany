@@ -1,53 +1,10 @@
 'use client';
-import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
+const HERO_VIDEO_ID = '8YHT2xGiBz4';
+const HERO_EMBED_SRC = `https://www.youtube.com/embed/${HERO_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${HERO_VIDEO_ID}&controls=0&modestbranding=1&playsinline=1&rel=0`;
+
 const VideoHero = () => {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      // Video'yu otomatik oynatmayı dene
-      const playPromise = video.play();
-      
-      if (playPromise !== undefined) {
-        playPromise.catch(error => {
-          // Autoplay başarısız olursa sessiz modda tekrar dene
-          console.log('Autoplay prevented, trying muted autoplay');
-        });
-      }
-
-      // Sağ tıklamayı engelle
-      const handleContextMenu = (e) => {
-        e.preventDefault();
-        return false;
-      };
-
-      // Klavye kontrollerini engelle
-      const handleKeyDown = (e) => {
-        e.preventDefault();
-        return false;
-      };
-
-      // Video kontrollerini tamamen devre dışı bırak
-      const handleClick = (e) => {
-        e.preventDefault();
-        return false;
-      };
-
-      video.addEventListener('contextmenu', handleContextMenu);
-      video.addEventListener('keydown', handleKeyDown);
-      video.addEventListener('click', handleClick);
-
-      return () => {
-        video.removeEventListener('contextmenu', handleContextMenu);
-        video.removeEventListener('keydown', handleKeyDown);
-        video.removeEventListener('click', handleClick);
-      };
-    }
-  }, []);
-
   return (
     <div 
       className="video-hero-wrapper" 
@@ -151,38 +108,27 @@ const VideoHero = () => {
         </div>
       </div>
 
-      <video
-        ref={videoRef}
-        autoPlay
-        loop
-        muted
-        playsInline
-        controls={false}
+      <iframe
+        title="Hero background video"
+        src={HERO_EMBED_SRC}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
         style={{
           position: 'absolute',
           top: '50%',
           left: '50%',
           width: '100vw',
-          height: '56.25vw', // 16:9 aspect ratio
+          height: '56.25vw',
           minHeight: '100vh',
-          minWidth: '177.77vh', // 16:9 aspect ratio
+          minWidth: '177.77vh',
           transform: 'translate(-50%, -50%)',
           border: 'none',
           outline: 'none',
           pointerEvents: 'none',
           userSelect: 'none',
-          objectFit: 'cover'
+          zIndex: 0
         }}
-        onContextMenu={(e) => e.preventDefault()}
-        onKeyDown={(e) => e.preventDefault()}
-        onMouseDown={(e) => e.preventDefault()}
-        onMouseUp={(e) => e.preventDefault()}
-        onMouseMove={(e) => e.preventDefault()}
-        onDoubleClick={(e) => e.preventDefault()}
-      >
-        <source src="https://oceanexglobal.com/wp-content/uploads/2025/08/OceanEx-Slider.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      />
       {/* Scoped styles for typing effect */}
       <style jsx>{`
         /* Typewriter effect and blinking caret */

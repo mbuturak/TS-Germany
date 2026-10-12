@@ -174,21 +174,21 @@ export const locations = [
     primaryKeyword: 'Marine Safety Germany',
     office: {
       name: '',
-      addressLine1: 'Theodor-Storm-Straße 1',
-      city: '21218 Seevetal',
+      addressLine1: 'Auepark 10',
+      city: '21271 Hanstedt',
       region: 'Hamburg',
       country: 'Germany',
-      postalCode: '21218',
+      postalCode: '21271',
       contact: 'Alper Kabaca – Branch Manager',
       phone: '+49 15 25 68 59 134',
       email: 'germany@taskinservices.com',
       flag: '/main-assets/image/flag/germany.jpg',
     },
     geo: {
-      lat: 53.383758289802365,
-      lng: 9.988224654570441,
+      lat: 53.2736027,
+      lng: 10.0077625,
     },
-    mapEmbedUrl: 'https://www.google.com/maps?q=Theodor-Storm-Stra%C3%9Fe+1+21218+Seevetal&hl=en&z=11&output=embed',
+    mapEmbedUrl: 'https://www.google.com/maps?q=Auepark+10+21271+Hanstedt&hl=en&z=11&output=embed',
     seo: {
       title: 'Task-in Services GmbH',
       description:

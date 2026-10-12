@@ -31,13 +31,13 @@ const officeLocations = [
   {
     id: 3,
     name: "Task-In Germany",
-    address: "Theodor-Storm-Straße 1",
-    city: "21218 Seevetal",
+    address: "Auepark 10",
+    city: "21271 Hanstedt",
     country: "Germany",
     phone: "+49 15 25 68 59 134",
     email: "germany@taskinservices.com",
     contact: "Alper Kabaca – Branch Manager",
-    coordinates: { lat: 53.383758289802365, lng: 9.988224654570441 },
+    coordinates: { lat: 53.2736027, lng: 10.0077625 },
     services: ["European Operations", "Marine Services", "Logistics"]
   }
 ];
